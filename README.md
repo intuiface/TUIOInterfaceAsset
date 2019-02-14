@@ -8,3 +8,11 @@ You can use the [TUIO Simulator](https://www.tuio.org/?software) provided by TUI
 See more information in this [Intuiface help center article](https://support.intuiface.com/hc/en-us/articles/360007432151-Using-tangible-objects)
 
 Download the experience available in the [releases](https://github.com/intuiface/TUIOInterfaceAsset/releases)
+
+Interaction Mode 1
+
+![Cloudinary Dashboard](Resources/demoXP-mode1.png)
+
+Interaction Mode 2
+
+![Cloudinary Dashboard](Resources/demoXP-mode1.png)
