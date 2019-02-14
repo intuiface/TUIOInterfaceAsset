@@ -11,8 +11,8 @@ Download the experience available in the [releases](https://github.com/intuiface
 
 Interaction Mode 1
 
-![Cloudinary Dashboard](Resources/demoXP-mode1.png)
+![Demo Mode 1](resources/demoXP-mode1.png)
 
 Interaction Mode 2
 
-![Cloudinary Dashboard](Resources/demoXP-mode1.png)
+![Demo Mode 2](resources/demoXP-mode2.png)
