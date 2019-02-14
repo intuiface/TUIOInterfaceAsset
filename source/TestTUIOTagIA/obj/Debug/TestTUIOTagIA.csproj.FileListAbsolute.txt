@@ -1,0 +1,11 @@
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\bin\Debug\TUIOTagIA.ifd
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\bin\Debug\TestTUIOTagIA.exe.config
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\bin\Debug\TestTUIOTagIA.exe
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\bin\Debug\TestTUIOTagIA.pdb
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\bin\Debug\libTUIO.dll
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\bin\Debug\TUIOTagIA.dll
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\bin\Debug\TUIOTagIA.pdb
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\obj\Debug\TestTUIOTagIA.csprojResolveAssemblyReference.cache
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\obj\Debug\TestTUIOTagIA.csproj.CoreCompileInputs.cache
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\obj\Debug\TestTUIOTagIA.exe
+C:\WorkGIT\demoInterfaceAssets\GetCursorIA\TestTUIOTagIA\obj\Debug\TestTUIOTagIA.pdb

@@ -1,0 +1,170 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "TUIOTagIA",
+  "name": "TUIOTagIA",
+  "version": "2.0",
+  "protocol": "dll",
+  "baseUrl": null,
+  "basePath": "TUIOTagIA",
+  "auth": {},
+  "dependencies": [
+    "TUIOTagIA.dll",
+    "libTUIO.dll"
+  ],
+  "schemas": {
+    "TUIOObjectIA": {
+        "id": "TUIOObjectIA",
+        "title":  "TUIO object",
+      "type": "object",
+      "properties": {
+        "SessionId": {
+          "title": "Session ID",
+          "type": "integer",
+          "description": "SessionId"
+        },
+        "SymbolId": {
+          "title": "Symbol ID",
+          "type": "integer",
+          "description": "SymbolId"
+        },
+        "XPos": {
+          "title": "X position",
+          "type": "number",
+          "description": "X Position between 0 and 1"
+        },
+        "YPos": {
+            "title": "Y position",
+            "type": "number",
+            "description": "Y Position between 0 and 1"
+        },
+        "Angle": {
+          "title": "Angle",
+          "type": "number",
+          "description": "Angle in degrees"
+        }
+      }
+    },
+    "TUIOTagIA": {
+      "id": "TUIOTagIA",
+      "type": "object",
+        "properties": {
+            "TUIOObjects": {
+                "title": "TUIO objects list",
+                "type": "array",
+                "description": "List of tangible objects retrieved through TUIO",
+                "readonly": true,
+                "items": {
+                    "$ref": "TUIOObjectIA"
+                }
+            },
+            "Port": {
+                "title": "TUIO Port",
+                "type": "integer",
+                "description": "TUIO Port"
+            },
+            "XPWidth": {
+                "title": "Experience width",
+                "type": "integer",
+                "description": "Experience width in pixels, used to convert tag coordinates."
+            },
+            "XPHeight": {
+                "title": "Experience height",
+                "type": "integer",
+                "description": "Experience height in pixels, used to convert tag coordinates."
+            },
+            "UsePredefinedIDs": {
+                "title": "Use predefined IDs",
+                "type": "boolean",
+                "description": "Check this box to predefine tag IDs that should be recognized."
+            },
+            "PredefinedIDs": {
+                "title": "Predefined IDs",
+                "type": "string",
+                "description": "List of IDs to be recognized, separated with , ; or -"
+            },
+            "XOffset": {
+                "title": "X Offset",
+                "type": "integer",
+                "description": "Offset on X axis to separate tags at design time."
+            },
+            "YOffset": {
+                "title": "Y Offset",
+                "type": "integer",
+                "description": "Offset on Y axis to set tags out of the scene at design time."
+            }
+
+        }
+    }
+  },
+  "resources": {
+    "TUIOTagIA": {
+      "title": "TUIO Tangible Objects",
+      "isInterfaceAsset": true,
+      "events": {
+        "TUIOObjAdded": {
+            "id": "TUIOObjAdded",
+            "title":  "TUIO object added",
+            "properties": {
+                "SessionId": {
+                    "title": "SessionId",
+                    "type": "integer",
+                    "description": "SessionId"
+                },
+                "SymbolId": {
+                    "title": "SymbolId",
+                    "type": "integer",
+                    "description": "SymbolId"
+                },
+                "XPos": {
+                    "title": "XPos",
+                    "type": "number",
+                    "description": "XPos"
+                },
+                "YPos": {
+                    "title": "YPos",
+                    "type": "number",
+                    "description": "YPos"
+                },
+                "Angle": {
+                    "title": "Angle",
+                    "type": "number",
+                    "description": "Angle"
+                }
+            }
+        },
+        "TUIOObjRemoved": {
+            "id": "TUIOObjRemoved",
+            "title": "TUIO object removed",
+            "properties": {
+                "SessionId": {
+                    "title": "SessionId",
+                    "type": "integer",
+                    "description": "SessionId"
+                },
+                "SymbolId": {
+                    "title": "SymbolId",
+                    "type": "integer",
+                    "description": "SymbolId"
+                },
+                "XPos": {
+                    "title": "XPos",
+                    "type": "number",
+                    "description": "XPos"
+                },
+                "YPos": {
+                    "title": "YPos",
+                    "type": "number",
+                    "description": "YPos"
+                },
+                "Angle": {
+                    "title": "Angle",
+                    "type": "number",
+                    "description": "Angle"
+                }
+            }
+        }
+      }
+    }
+  }
+}

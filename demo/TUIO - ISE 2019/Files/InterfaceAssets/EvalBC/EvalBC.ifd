@@ -1,0 +1,54 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "EvalBC:v1",
+  "name": "EvalBC",
+  "version": "v1.7",
+  "title": "EvalBC",
+  "if.category": "Custom",
+  "protocol": "js",
+  "basePath": "EvalBC",
+  "if.dependencies": [
+	"EvalBC.js"
+  ],
+  "schemas": {
+    "EvalBC": {
+      "id": "EvalBC",
+      "type": "object",
+      "description": "Converter ... values"
+    }
+  },
+  "icons" : {
+      "x32" : "icon_eval_32.png"
+  },
+  "resources": {
+    "EvalBC": {
+      "id": "EvalBC",
+      "if.interfaceAsset": "true",
+      "title": "Eval",
+      "description": "Converts a value using a linear rule",
+      "methods": {
+        "evalBC": {
+            "id": "EvalBC.evalBC",
+            "if.converter": true,
+            "title": "Script",
+            "description": "Enter your JavaScript code below. The keyword INPUT represents your source value as a string. Click [url=http://support.intuilab.com/kb/binding-and-value-converters/custom-script-converter]here[/url] for help.",
+            "path": "evalBC",
+            "parameters": {
+                "input": {
+                    "type": "string",
+                    "title": "Input"
+                },
+                "evalFunction": {
+                    "type": "string",
+                    "title": "Script"
+                }
+            },
+            "response" : {
+                "$ref" : "string"
+            }
+        }
+      }
+    }
+  }
+}

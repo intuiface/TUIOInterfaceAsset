@@ -1,0 +1,245 @@
+{
+  "kind": "discovery#jsDescription",
+  "discoveryVersion": "v1",
+  "id": "TextManipulationBC:v1",
+  "name": "TextManipulationBC",
+  "version": "v1.3",
+  "if.category": "Text Manipulation",
+  "protocol": "js",
+  "basePath": "TextManipulationBC",
+  "if.dependencies": [
+    "TextManipulationBC.js"
+  ],
+  "schemas": {
+    "TextManipulationBC": {
+      "id": "TextManipulationBC",
+      "type": "object"
+    }
+  },
+  "icons": {
+    "x32": "icon_text_manipulation_32.png"
+  },
+  "resources": {
+    "TextManipulationBC": {
+      "id": "TextManipulationBC",
+      "if.interfaceAsset": true,
+      "methods": {
+        "concatenate": {
+          "id": "TextManipulationBC.concatenate",
+          "path": "TextManipulationBC",
+          "if.converter": true,
+          "description": "Concatenates the original text with the new text below.",
+          "title": "Concatenate",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "text": {
+              "type": "string",
+              "title": "New text",
+              "default": ""
+            },
+            "position": {
+              "type": "string",
+              "title": "Position",
+              "enum": [
+                "after",
+                "before"
+              ],
+              "enumTitle": [
+                "After",
+                "Before"
+              ]
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        },
+        "enclose": {
+          "id": "TextManipulationBC.enclose",
+          "path": "TextManipulationBC",
+          "if.converter": true,
+          "description": "Encloses the original text between the text specified below.",
+          "title": "Enclose",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "before": {
+              "type": "string",
+              "title": "Preceding text",
+              "default": ""
+            },
+            "after": {
+              "type": "string",
+              "title": "Following text",
+              "default": ""
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        },
+        "replace": {
+          "id": "TextManipulationBC.replace",
+          "path": "TextManipulationBC",
+          "if.converter": true,
+          "description": "Replaces all instances of found text with new text.",
+          "title": "Replace",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "oldText": {
+              "type": "string",
+              "title": "Find what",
+              "default": ""
+            },
+            "newText": {
+              "type": "string",
+              "title": "Replace with",
+              "default": ""
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        },
+        "substring": {
+          "id": "TextManipulationBC.substring",
+          "path": "TextManipulationBC",
+          "if.converter": true,
+          "description": "Extracts a substring from the original text.",
+          "title": "Substring",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "startIndex": {
+              "type": "integer",
+              "title": "Index of first character",
+              "default": 1
+            },
+            "endIndex": {
+              "type": "integer",
+              "title": "Index of last character",
+              "default": 2
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        },
+        "itemAt": {
+          "id": "TextManipulationBC.itemAt",
+          "path": "TextManipulationBC",
+          "if.converter": true,
+          "description": "Gets the item at the specified index.",
+          "title": "Item at",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "separator": {
+              "type": "string",
+              "title": "Item separator",
+              "enum": [
+                "blank",
+                "comma",
+                "semicolon",
+                "dash",
+                "pipe",
+                "underscore"
+              ],
+              "enumTitle": [
+                " (blank)",
+                ", (comma)",
+                "; (semicolon)",
+                "- (dash)",
+                "| (pipe)",
+                "_ (underscore)"
+              ]
+            },
+            "index": {
+              "type": "integer",
+              "title": "Index",
+              "default": 1
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        },
+        "toUpperCase": {
+          "id": "TextManipulationBC.toUpperCase",
+          "path": "TextManipulationBC",
+          "if.converter": true,
+          "description": "Converts the original text to uppercase letters.",
+          "title": "To uppercase",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            },
+            "applyTo": {
+              "type": "string",
+              "title": "Apply to",
+              "enum": [
+                "all",
+                "firstLetter",
+                "properName"
+              ],
+              "enumTitle": [
+                "All characters",
+                "First character",
+                "First character of each word"
+              ]
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        },
+        "toLowerCase": {
+          "id": "TextManipulationBC.toLowerCase",
+          "path": "TextManipulationBC",
+          "if.converter": true,
+          "description": "Converts the original text to lowercase letters.",
+          "title": "To lowercase",
+          "parameters": {
+            "input": {
+              "type": "string",
+              "description": "in value",
+              "title": "input"
+            }
+          },
+          "response": {
+            "$ref": "string"
+          }
+        }
+      }
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "FREE",
+      "hostname": "PLATANE",
+      "data": "gZycXqfAWBU9kgiW1X3qQyPMikudhQ+OUWjbFTVY/PGO2JFtHC34ot5i1lx8cQ2DLjgnI9hTaJyIE23WcBxo4wYlQsNSvlPskBWufK6M7nS4W6Gd3OY/R1FvOpMvDPZPmH1AEGd59n36oJxXO3VLCLIWBC9VdHP2saX11JKqwKDp5syVdkikGsmk+jeyJ2fKaMWk+hV9jz7rJZTZ4zJEcDDiQ2EKq2AyAdckOr9Ik66EEwE0S4HacLP9Cwog99t9tNHN26Erhoime5wnTkcWv1nKsyE99Up2zxydBe1UU1lOLVpFlcOxu4RmrsroPfPwbTeVjxndDNZbUm2ix3yXoVxZDakGONaYmPdOKQA2Uo5UgCYwtUdZuBfhIAijqstBi2ES9JMTbIMciCIxmkq1huH5WIILiOGkbXzAmh8Qrazk3WAyDjAMzOIjBDJxM5jJdxIodOnOlx+1ooBfMwC8cnYabsyPOZ4ih8EW4G5E2uFxMGtBSWDEHYDmtfhUru/Q5oGodpAyACok7oF7HME5spg7q5BBJRfyMekP8oubzufVyocp9E7PW8GnPNUDuuF5p3bcKH0lP/EErGDSybYl7HXEMIm/waO3WmXrCUyMyYppw2DsUIaxzGQhkwopDIdMPR0ZbaTYL6RHRAUUQG0L8fLDrvkhtqS6h9Y7Xq+KJMUpT9M7VpvDuoDRJzJutw4F2O8LeRoExi+LVV+Qs6eeLfy/WAST0+IknYAd/WyGaaJI2cFY9kgIiAzed5rM5qV2UWmIq2YVbR7kI3Nhbg30lDbIUKw5mPbeIBy1BCDJR/IuCl1pScJm7yN5EONvHX4HZ3kEbYKq5pKEt/T8iGODvvjdt4PDNCdj5sYcSdpmLSkYUTGrLMVFu+cOUW8VuUIYodKHUmutyvFC4t4jw1Jk6IbhARvWtEv8AtJ42IaPxqoTlMs39kjc5pXV9nuNG/7THTqT798zQlgTvHimnfN2A/NrfAKfXLfV9y38A/FOrXVA2HCHCJHnyv7eDgki/CLOquDn/pTaygbiKV7uQQ53owC/HhlPeW7ZQ5HkkBSnw7bOSj2EKFEcw9CSyofonYReLiF/O3/L0u89DW3J9Ezl3WvOymX+39WyAejHe3aytkz8gkk6QQAtiCJcY3mHnEG89X/xdGbYcBchyNCtnQIoHGltAduB0x6qiup6agH4l4uY6P5A2Oy5D7OxuI1nMnD6pT5Nghnive8LkyjXTtyzGyjcL4PytYkKZ9RXTcyU3FdxClBmnoPY0VCHNDsvo/1WoJBXmrD7jUagZ/zh57qDS7mJ/97crHSPDXobs1zyJ9ut5Eh4v0u0IJFAAzfjryxkGIVQ5X2KgbsvvBprUN70GJrdWdpgVIBQ/vD7KVcHo60+E985qMWtEKmEpZRvb8gNyh2dg3yrrzMLDH49FSZA5lbhBkyIklHYjdR6kHmiL6B7AXRFSMb+2WzWJqlEbrit6HmC+LwSI97ru/tAcyezDeOyseH5S4hy/L8waMy0Wb8U6nob+fNZ68BBskWq99dc8CKuV642HgJu6nI/+rfPFhtcYN1uqR0mOFEw4HJJG+Hyp1LgzVczD+TldhG8LN4PmJzyIAAUYnCXPiNfq8F0emk2C2BOZOnq5HBnwKM4aFwHSYgT5zGcWL5DtuMBetOhJcfaRZLq8J5H9GL7P9UI3x+mWCgk30tgzLEqtL2dTdz5qkoT7VidBtHrQpGs2F9FCpltTxhOj63ws0mWSqe5Fi75sqOcFjKucyRXi0ayDSve7tPXARyXp/PG4OzAQ+Ww1LzQwSPcihK7t25+ldPAVFKRBGgg4XBVHo98TOqzjpOg0VKNpRQ90unNjSw3pFEBFGXIx6V/VmUuXtPvIl/9Og==",
+      "key": "jiK/3xuiHN7Akf9xvavL8asriCg0QvxrY8oIRhFUhbPNH/TZqENItG6vEkeeJQB1WBX/ArOcGG+hM5y4QM4yPGh3ygvQabWA63jN2hS431wtvpsLgFDsdkc1vD3Q6Ohoc4I9g/KdngqbDqwW65OYYaSFoLjybbAt+7Pel/cBteEx9GiGAudz8tlPsOO5Pa1ppMQsSOMlWpGexTVU0mFOaYkcHv0fEvgpfQXCxfNwDX+DoJIe0kR1wAVg87X7WnkmzSBy+x5pfP7MaovvuHCpB3CRfcNjZd+oa4uW2fDEVVG5y5XLz8bhjl1Qfa6cntjle+yltdlRfD+JLTbrHTvUTw==",
+      "iv": "b5cEbj75xsmA4OUWxbe1W66H/MIW7QRrCmpk4WYKhhX7+/e1l3UfGGU/z3T51cXkNq47q/KF8+TOnmZs38P+F/9cOtUq/kI09d2D0eGFIx+eWHdpBgHPfeQ0tD2uTYXRnolLt1ZM50znfkxLGx7mcnFZfTcRwkbPaggFqB/12AJTnVTOAA1icL+rQO9jZNkcC8eXJGbpyaOyE6kmgwp/cV1M2Yiyh4wd/c0K5ap/13d9AjjhkWEcou7L/I5pMmHox0iXGSL6f8rPBIMGchsuudCYt4WJJOt8+p+nDF1N006u4UszXc1dMMg8o9RumKHua/56gCCBBiFgLYNpRj1NRA=="
+    }
+  }
+}

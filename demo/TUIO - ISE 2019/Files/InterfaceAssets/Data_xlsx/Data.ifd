@@ -1,0 +1,203 @@
+{
+  "kind": "discovery#restDescription",
+  "discoveryVersion": "v1",
+  "id": "Data",
+  "name": "Data",
+  "version": "1.0",
+  "protocol": "excel",
+  "baseUrl": null,
+  "basePath": "",
+  "auth": {},
+  "dependencies": [
+    "Data.xlsx"
+  ],
+  "schemas": {
+    "Categories": {
+      "id": "Categories",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "Categories.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Categories.Row": {
+      "id": "Categories.Row",
+      "type": "object",
+      "properties": {
+        "name": {
+          "id": "Categories.Row.name",
+          "type": "string",
+          "description": "name column",
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Wall": {
+      "id": "Wall",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "Wall.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Wall.Row": {
+      "id": "Wall.Row",
+      "type": "object",
+      "properties": {
+        "name": {
+          "id": "Wall.Row.name",
+          "type": "string",
+          "description": "name column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "path": {
+          "id": "Wall.Row.path",
+          "type": "string",
+          "description": "path column",
+          "annotations": {
+            "assetType": "AssetImage",
+            "selected": true
+          }
+        }
+      }
+    },
+    "Kiosk": {
+      "id": "Kiosk",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "Kiosk.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Kiosk.Row": {
+      "id": "Kiosk.Row",
+      "type": "object",
+      "properties": {
+        "name": {
+          "id": "Kiosk.Row.name",
+          "type": "string",
+          "description": "name column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "path": {
+          "id": "Kiosk.Row.path",
+          "type": "string",
+          "description": "path column",
+          "annotations": {
+            "assetType": "AssetImage",
+            "selected": true
+          }
+        }
+      }
+    },
+    "Tablet": {
+      "id": "Tablet",
+      "type": "object",
+      "properties": {
+        "Rows": {
+          "type": "array",
+          "readonly": true,
+          "items": {
+            "$ref": "Tablet.Row"
+          },
+          "annotations": {
+            "selected": true
+          }
+        }
+      }
+    },
+    "Tablet.Row": {
+      "id": "Tablet.Row",
+      "type": "object",
+      "properties": {
+        "name": {
+          "id": "Tablet.Row.name",
+          "type": "string",
+          "description": "name column",
+          "annotations": {
+            "selected": true
+          }
+        },
+        "path": {
+          "id": "Tablet.Row.path",
+          "type": "string",
+          "description": "path column",
+          "annotations": {
+            "assetType": "AssetImage",
+            "selected": true
+          }
+        }
+      }
+    }
+  },
+  "resources": {
+    "Categories": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "Categories.Row": {
+      "icon": "excel_icon.png"
+    },
+    "Wall": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "Wall.Row": {
+      "icon": "excel_icon.png"
+    },
+    "Kiosk": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "Kiosk.Row": {
+      "icon": "excel_icon.png"
+    },
+    "Tablet": {
+      "isInterfaceAsset": true,
+      "icon": "excel_icon.png"
+    },
+    "Tablet.Row": {
+      "icon": "excel_icon.png"
+    }
+  },
+  "signature": {
+    "hash": "2jmj7l5rSw0yVb/vlWAYkK/YBwk=",
+    "signatureData": {
+      "editionLevel": "ENTERPRISE",
+      "hostname": "ALLIUM",
+      "data": "r+g+dBhX5NczuHzxpUUuliNYwTO1PKDsgfvK7xx/6vIIEPFLqV+psCZOrKkeTTHBQvJjR0qlbzV8tqck/1rasrr6ipA9wlaTu48Hjm/mvhAznOsI4/Pg+YtGGlHjTuMgLFo4XtGmT7sYzRKJmdhpescPIEwsGYLeauE4KLDRy6EsqCgj+1wijPNtKtA6cWHoRZwONvX2O5hM1Xj21rxC6ghNAdBwyHh7j9zWhYvfAH6+3fti+Bbu7Y2tqKA/P10hNXSG+HolNf0vweIm/p4HshHGaiAwnVqOyVpGMRO8Qt9Ctdq2NQjGEH5JP0WfxKBPb4mf6CYgOKf+GFgoLHAO+eNMBcJVmKWMMAmHvZ8IdfmJUh6r2UlN+1zu4Vhh3JbIeeRRO4ySBCCSyTeNkmH2XbFFTY4Q/OWfoNYd6RUW/Gp/CLykDC7hwFmUbApzGW+DuQeKDt9WgACYho+y71EQb4Ig5/M2x4Uyrdd4yG4YFw6M671EA9992GAEWmmjVrjC5lInc+SnhLK2rpBlcyBXartGhRhMDlDBGSwC0KQJCgNVp6AlMXlZOEGRLNOCpDmhH2l8syLIUjkThPVT/nmONxvtuJ/Nenn0hK7if2qlRLqh9BLqiUgzRWml2zitgTh1WBZvpj52aoizfErn4wr0y4TqHxaOmu9fRMSsgrnw0XByKZ0AAksyFJgPiF6lIFnCiKm+C7tyTGsvyoNsYU7LGJQREjzpGENHrjwJWW+ERnhEQ+t3bOEPAYRO+QCXxA+f0MbY+kciHPi14L/pyzXHRt/blzjJtszT0w0aNLUAF78AO+ZHJkdKTvDL99+CR2WYEo+oLxDCICPCgFwLAHE9aUea9Gvh1+M1VOeyoref5qQMkNHttPAwIrg7cZdFm6GQqF0/qf4zuFZFcMJ4Ex+9xZO4GWkF9gIRS81wgHYDOeJ79h5kQKlXZf1FCETI+2B7wy+TBJ8MQhmfFk3mIomildWDmAjRC56n62lnSVCluivafcsWsJKxTPlMQd8nZiH+AUAtcAqHMSFcsLxI+IE8z1FTL2+9gEJAlTckWAaaV8qXqlZ4oxbTDMEEHO9qUr6g7KL+khdK4tZJJGOo/8zE4oDfp7SPyj8NNl9pdCWjkaNaEYfmVoVQTTjiVjcph8J/YmpyuOfkAEB4dPRzErxZ/4v6F3F58CCZxDRAcEbKVD1m1MDPb8UV++/LMcAfgXVd3WoAhZAwTS/0AufaIDzaGG0boNHk7fFYKkdnken+cNLE7OGp6KC/bh3P8mVRV5SaJWpKxXs0kHmUVaF+PE+aUbBh5MbDWhhDud6Ki3oZtyy0aQcymFUSur3oQgudvwbk9AVy2cfdPLI4eQpJu+dfYCdH9JBKd7Xq6dvybn0EwQj9wnDaOqRV8GItVW9/R7FLEm1n9m2YnAV1TzLFwdbYRx5TjK1v23reQFTbEhFEhlZX7zooFevpWoA8audXUHTcZi65VEUORppCYHtBxfMoVFoxgc3hl+wKemBNS9W9X3ZqfVE/6BjZq6ZLcbYoCOAiaWczWRW2I+/ubsGoN1r8tYnuubjchvlHNu45ghW3TtLLXOG/jzdsTU3oxlIZ5IS1mKJBHznW0N4hc+fjGHZyqzteta49aysbRZRjH0FlREpowNAkf0pI0x4o8pTQmjjbcxqlpmlklG9WHoLOA8uCvginfbQ/ZXiWQk9SVfEg7o31t1xTnwu2smxN+YJMoT7vdaYYmeG5PChjj/bDLv0f5RIQVKEnIPbv0eyyz1LTVI5wZ3HYWxIn4+1YnNNm4UGwZsjrSG7/iSPI2l29BvoDD0osivn3aIqlXjwltNRbBNqXpYmU/ar4rwoIA94BxIMnZUBGSqi4/mdl2tRdL4ueCEdpAUPTvmYuVGJe5rilol5N0z/Mbm+dJhyqMOq0As/EHEUNSGdr9ADTQGM8o7kV/yKecE38Zu0Ja8WcobAtXTatk4ejo8yCrclznpCKay3t95H2TG8QWSg8fzIncMZtqYlpWv5TwhrX5ZaIFhZlFUk=",
+      "key": "BpOG7sdmCH9zGrlZQqYnJC6IBHR8ogEq1biW9ee4/wnoE52YA1ZhZ3eDzvchn3XXs5MOwEoqa9LOsaO8UuA20ZuR7K4vq5CSMNEDgDn/t9GGGKupyej7OeajWQkw/u+LIVBSXvn9O0mibu0Xv2QEk51bNMLI6chP6OJL+LIb6iTjexOmnKBIvG5zIJC/8hlbylErB8wjj/KbP1Tu1P/tfPR19TqRKLFaF2Lbn1m7iSP+46MlDMCZVk7UogSg7j3aRwJ4PlZYpGxg1FfYBTT1N3oLKyOnFuvMn9ujTfqAxYDQtwgjtLa0J1Aq5Sr8VZiZn18g9kkzAlLAIPGUDtde7w==",
+      "iv": "YTY9IcuOT5x8zvXGCeNahNvj5bqP/g5/xIF3xVPInkAwEl0RKeP23m36/raI9/4o03W7j2SlM8Q7S3ueDn15JBuBrCOgZFZOKhuRbG1LshWo1f6X20aw7Cpk4q+Zxa3IhEjA7ef/dvi8ePlFFzzzFrp6X3H/OHP3N1f+gmxE0sMNQkMbtUZ8CGtJHc2kvPaKtMEj5nfaWGCHY8TL56vrFJ/XAA+8sfO3+dd9cxMsKQuDU9mjXEv73B9ZkjPU4Yce6fRCteoRMKH7OFXjbDJa5zOXJrV56WnjfTsNnDKBFsfkbeGPVeJ7NJjrKsbzZmJNmmJgJkGhhjDA0JVUJKdYFg=="
+    }
+  }
+}
