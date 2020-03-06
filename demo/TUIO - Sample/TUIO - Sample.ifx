@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="TUIO - ISE 2019" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-7e65e92d-2e0d-4dc5-96e2-77dec0bf1a4d" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ApiNumber="26" MinApiNumber="26" RequiredPlayerWindows="6.3.0" RequiredPlayerTablet="6.3.0" LastModificationDate="2019-02-14T14:04:58.8714908Z" SnapshotPath="player://data/Snapshots/default.png">
+<Presentation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xi="http://www.w3.org/2001/XInclude" xsi:noNamespaceSchemaLocation="http://schemas.intuilab.com/intuiface/api5/ip.xsd" Name="TUIO - Sample" Templates="player://resources/418401b6-8f3b-4ebc-a8ea-a6d32480aa0f" Id="1-b510e647-9b4d-4c8f-b087-61530f8c3eaa" OriginalId="1-7e65e92d-2e0d-4dc5-96e2-77dec0bf1a4d" DataPath=".\Files" Language="" Width="1920" Height="1080" ShowLoadingIndicator="true" Platform="windows" ComposerVersion="6.5.1" ApiNumber="28" MinApiNumber="28" RequiredPlayerWindows="6.4.0" RequiredPlayerTablet="6.4.0" LastModificationDate="2020-03-06T16:13:26.9849384Z" SnapshotPath="player://data/Snapshots/default.png">
   <ComposerExtensions>
     <Extension Name="HasActionTargetTreeBeenManipulated" Value="true" />
     <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
@@ -133,7 +133,7 @@
           <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
           <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
           <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
-          <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BackgroundColor]]></Property>
+          <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BackgroundColor]]></Property>
           <Property Type="Container" Name="MinWidth"><![CDATA[value:50]]></Property>
           <Property Type="Container" Name="MinHeight"><![CDATA[value:50]]></Property>
           <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
@@ -366,7 +366,7 @@
         </ComposerExtensions>
         <Attachments>
           <EventTrigger EventType="Visual" EventName="Tapped">
-            <InvokeService Target="player://visuals/TUIO%20-%20ISE%202019/Info%20Overlay%20Layer/" Type="Container" Name="Show" Delay="value:0">
+            <InvokeService Target="player://visuals/TUIO%20-%20Sample/Info%20Overlay%20Layer/" Type="Container" Name="Show" Delay="value:0">
               <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
               <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
               <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
@@ -400,7 +400,7 @@
         </ComposerExtensions>
         <Attachments>
           <EventTrigger EventType="Visual" EventName="Tapped">
-            <InvokeService Target="player://visuals/TUIO%20-%20ISE%202019/Info%20Overlay%20Layer/" Type="Container" Name="Show" Delay="value:0">
+            <InvokeService Target="player://visuals/TUIO%20-%20Sample/Info%20Overlay%20Layer/" Type="Container" Name="Show" Delay="value:0">
               <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
               <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
               <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
@@ -468,12 +468,38 @@
               <GradientStop Color="#994781FB" Offset="0.809230769230769" />
             </BackgroundColor>
           </Property>
+          <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:False]]></Property>
           <Property Type="Container" Name="X"><![CDATA[value:960]]></Property>
           <Property Type="Container" Name="Y"><![CDATA[value:540]]></Property>
           <Property Type="Container" Name="Width"><![CDATA[value:1920]]></Property>
           <Property Type="Container" Name="Height"><![CDATA[value:1080]]></Property>
           <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+        </Properties>
+      </Asset>
+      <Asset Name="Do a swipe leftrigh 1" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
+        <Properties>
+          <Property Type="Domain" Name="Text"><![CDATA[value:Do a swipe left/right gesture on the background to try 3 different interaction modes with the tangible objects.
+Press space to open the debug window]]></Property>
+          <Property Type="Visual" Name="Font">
+            <Typeface>
+              <Family>Raleway</Family>
+              <Stretch>normal</Stretch>
+              <Weight>300</Weight>
+              <Style>italic</Style>
+            </Typeface>
+          </Property>
+          <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+          <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+          <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+          <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+          <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
           <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:False]]></Property>
+          <Property Type="Container" Name="X"><![CDATA[value:1586]]></Property>
+          <Property Type="Container" Name="Y"><![CDATA[value:1000]]></Property>
+          <Property Type="Container" Name="Width"><![CDATA[value:609]]></Property>
+          <Property Type="Container" Name="Height"><![CDATA[value:120]]></Property>
+          <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
         </Properties>
       </Asset>
     </Layer>
@@ -725,7 +751,7 @@ Excel Interface Asset]]></Property>
         </ComposerExtensions>
         <Attachments>
           <EventTrigger EventType="Visual" EventName="Tapped">
-            <InvokeService Target="player://visuals/TUIO%20-%20ISE%202019/Info%20Overlay%20Layer/" Type="Container" Name="Hide" Delay="value:0">
+            <InvokeService Target="player://visuals/TUIO%20-%20Sample/Info%20Overlay%20Layer/" Type="Container" Name="Hide" Delay="value:0">
               <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
               <ServiceValueParameter ParamName="animationType" Value="value:Fade" />
               <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
@@ -800,13 +826,14 @@ Excel Interface Asset]]></Property>
       <ComposerExtensions>
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
-            <Attribute Key="b5c3881b-7dcd-4790-b4a8-6bdee6458965" Value="False" />
+            <Attribute Key="49cdb506ac2b306165a6c78dbd0854ec1364ad7416229705c64f806228ad28d2" Value="False" />
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
           </ComplexAttributes>
         </Extension>
+        <Extension Name="ViewPortXOnScene" Value="2021.05263157895" />
+        <Extension Name="ViewPortYOnScene" Value="1602.16306932078" />
         <Extension Name="TranslateXOnScene" Value="-960" />
         <Extension Name="TranslateYOnScene" Value="-540" />
-        <Extension Name="ViewPortXOnScene" Value="2021.05263157895" />
-        <Extension Name="ViewPortYOnScene" Value="1620.18268812527" />
       </ComposerExtensions>
       <Attachments>
         <EventTrigger EventType="Visual" EventName="KeyPressed">
@@ -825,7 +852,7 @@ Excel Interface Asset]]></Property>
             <Conditions Operator="And">
               <ComparisonCondition Operator="Equal">
                 <LeftOperand>
-                  <ValueParameter Value="player://visuals/TUIO%20-%20ISE%202019/Mode%201/Main/Debug%20Mode%20Controlle/DomainComponent/IsChecked" />
+                  <ValueParameter Value="player://visuals/TUIO%20-%20Sample/Mode%201/Main/Debug%20Mode%20Controlle/DomainComponent/IsChecked" />
                 </LeftOperand>
                 <RightOperand>
                   <ValueParameter Value="value:False" />
@@ -833,7 +860,7 @@ Excel Interface Asset]]></Property>
               </ComparisonCondition>
             </Conditions>
           </Conditions>
-          <InvokeService Target="player://visuals/TUIO%20-%20ISE%202019/Mode%201/Main/Debug%20Mode%20Controlle/" Type="Domain" Name="Check" Delay="value:0" />
+          <InvokeService Target="player://visuals/TUIO%20-%20Sample/Mode%201/Main/Debug%20Mode%20Controlle/" Type="Domain" Name="Check" Delay="value:0" />
         </EventTrigger>
         <EventTrigger EventType="Visual" EventName="KeyPressed">
           <Conditions Operator="And">
@@ -851,7 +878,7 @@ Excel Interface Asset]]></Property>
             <Conditions Operator="And">
               <ComparisonCondition Operator="Equal">
                 <LeftOperand>
-                  <ValueParameter Value="player://visuals/TUIO%20-%20ISE%202019/Mode%201/Main/Debug%20Mode%20Controlle/DomainComponent/IsChecked" />
+                  <ValueParameter Value="player://visuals/TUIO%20-%20Sample/Mode%201/Main/Debug%20Mode%20Controlle/DomainComponent/IsChecked" />
                 </LeftOperand>
                 <RightOperand>
                   <ValueParameter Value="value:True" />
@@ -859,7 +886,7 @@ Excel Interface Asset]]></Property>
               </ComparisonCondition>
             </Conditions>
           </Conditions>
-          <InvokeService Target="player://visuals/TUIO%20-%20ISE%202019/Mode%201/Main/Debug%20Mode%20Controlle/" Type="Domain" Name="Uncheck" Delay="value:0" />
+          <InvokeService Target="player://visuals/TUIO%20-%20Sample/Mode%201/Main/Debug%20Mode%20Controlle/" Type="Domain" Name="Uncheck" Delay="value:0" />
         </EventTrigger>
       </Attachments>
       <Properties>
@@ -1388,6 +1415,7 @@ Excel Interface Asset]]></Property>
                     <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
                     <Property Type="Container" Name="X"><![CDATA[value:240]]></Property>
                     <Property Type="Container" Name="Y"><![CDATA[value:240]]></Property>
+                    <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
                   </Properties>
                 </Asset>
                 <Collection Name="Handle Group Wall" Visual="Group" Style="" Container="Default" ContainerStyle="">
@@ -1411,7 +1439,7 @@ Excel Interface Asset]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
@@ -1434,17 +1462,17 @@ Excel Interface Asset]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
-                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BackgroundColor]]></Property>
-                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
+                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BackgroundColor]]></Property>
+                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
                       <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
                       <Property Type="Container" Name="X"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
-                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
-                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
+                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
+                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
                       <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
                     </Properties>
                   </Asset>
@@ -1497,7 +1525,7 @@ Excel Interface Asset]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
@@ -1520,15 +1548,15 @@ Excel Interface Asset]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
-                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BackgroundColor]]></Property>
-                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
+                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BackgroundColor]]></Property>
+                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
                       <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
-                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
-                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
+                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
+                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
                       <Property Type="Container" Name="X"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -1588,7 +1616,7 @@ Excel Interface Asset]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
@@ -1611,15 +1639,15 @@ Excel Interface Asset]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
-                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BackgroundColor]]></Property>
-                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
+                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BackgroundColor]]></Property>
+                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
                       <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
-                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
-                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
+                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
+                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
                       <Property Type="Container" Name="X"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -1660,7 +1688,7 @@ Excel Interface Asset]]></Property>
                 </Collection>
                 <Collection Name="Group Selector" Visual="Group" Style="" Container="No resize" ContainerStyle="">
                   <ComposerExtensions>
-                    <Extension Name="IsExpanded" Value="True" />
+                    <Extension Name="IsExpanded" Value="False" />
                     <Extension Name="IsExpandedInBindingViews" Value="True" />
                     <Extension Name="IsLocked" Value="False" />
                     <Extension Name="HasBeenRenamed" Value="True" />
@@ -1787,12 +1815,7 @@ Excel Interface Asset]]></Property>
                     <Extension Name="HasBeenRenamed" Value="True" />
                   </ComposerExtensions>
                   <Properties>
-                    <Property Type="Domain" Name="Text">
-                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
-                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Angle" />
-                        <ServiceValueParameter ParamName="evalFunction" Value="value:INPUT.replace(&quot;,&quot;,&quot;.&quot;)" />
-                      </ConvertedValue>
-                    </Property>
+                    <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/Angle]]></Property>
                     <Property Type="Visual" Name="Font">
                       <Typeface>
                         <Family>Segoe UI</Family>
@@ -1806,7 +1829,7 @@ Excel Interface Asset]]></Property>
                     <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
                     <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                     <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                    <Property Type="Container" Name="X"><![CDATA[value:120]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:240]]></Property>
                     <Property Type="Container" Name="Y"><![CDATA[value:550]]></Property>
                     <Property Type="Container" Name="Width"><![CDATA[value:240]]></Property>
                     <Property Type="Container" Name="Height"><![CDATA[value:60]]></Property>
@@ -1818,12 +1841,7 @@ Excel Interface Asset]]></Property>
                     <Extension Name="HasBeenRenamed" Value="True" />
                   </ComposerExtensions>
                   <Properties>
-                    <Property Type="Domain" Name="Text">
-                      <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
-                        <ServiceValueParameter ParamName="input" Value="current://View/RootVisual/Cooked%20Angle/DomainComponent/Text" />
-                        <ServiceValueParameter ParamName="evalFunction" Value="value:if (INPUT &gt;= 90 &amp;&amp; INPUT &lt;= 150)&#xD;&#xA;&quot;Tablet&quot;;&#xD;&#xA;if (INPUT &gt; 150 &amp;&amp; INPUT &lt; 210)&#xD;&#xA;&quot;Kiosk&quot;;&#xD;&#xA;if (INPUT &gt;= 210 &amp;&amp; INPUT &lt;= 270)&#xD;&#xA;&quot;Wall&quot;;&#xD;&#xA;" />
-                      </ConvertedValue>
-                    </Property>
+                    <Property Type="Domain" Name="Text"><![CDATA[current://DomainComponent/Angle]]></Property>
                     <Property Type="Visual" Name="Font">
                       <Typeface>
                         <Family>Segoe UI</Family>
@@ -1838,8 +1856,9 @@ Excel Interface Asset]]></Property>
                     <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                     <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                     <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+                    <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
                     <Property Type="Container" Name="X"><![CDATA[value:360]]></Property>
-                    <Property Type="Container" Name="Y"><![CDATA[value:550]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:510]]></Property>
                     <Property Type="Container" Name="Width"><![CDATA[value:240]]></Property>
                     <Property Type="Container" Name="Height"><![CDATA[value:60]]></Property>
                     <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -1876,7 +1895,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Wall/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Wall/View/BackgroundColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
@@ -1885,7 +1904,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Wall/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Wall/View/BorderThickness" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderColor" Delay="value:0">
@@ -1894,7 +1913,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Wall/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Wall/View/BorderColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Gradient%201/" Type="Container" Name="Hide" Delay="value:0">
@@ -1935,7 +1954,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BackgroundColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
@@ -1944,7 +1963,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BorderThickness" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderColor" Delay="value:0">
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
@@ -1953,7 +1972,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BorderColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Gradient%201/" Type="Container" Name="Show" Delay="value:0">
                         <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
@@ -1994,8 +2013,8 @@ Excel Interface Asset]]></Property>
                     <Property Type="Domain" Name="LogicGroupName"><![CDATA[current://DomainComponent/SymbolId]]></Property>
                     <Property Type="Domain" Name="IsChecked">
                       <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
-                        <ServiceValueParameter ParamName="input" Value="current://View/RootVisual/Cooked%20Angle/DomainComponent/Text" />
-                        <ServiceValueParameter ParamName="evalFunction" Value="value:if (INPUT &gt;= 210 &amp;&amp; INPUT &lt;= 270)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Angle" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:INPUT &gt; 210 &amp;&amp; INPUT &lt;= 270" />
                       </ConvertedValue>
                     </Property>
                     <Property Type="Domain" Name="AllowToUncheck"><![CDATA[value:True]]></Property>
@@ -2033,7 +2052,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBackgroundColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Kiosk/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Kiosk/View/BackgroundColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2042,7 +2061,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Kiosk/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Kiosk/View/BorderThickness" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2051,7 +2070,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Kiosk/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Kiosk/View/BorderColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2091,7 +2110,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBackgroundColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BackgroundColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2100,7 +2119,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BorderThickness" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2109,7 +2128,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BorderColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2157,8 +2176,8 @@ Excel Interface Asset]]></Property>
                     <Property Type="Domain" Name="AllowToUncheck"><![CDATA[value:True]]></Property>
                     <Property Type="Domain" Name="IsChecked">
                       <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
-                        <ServiceValueParameter ParamName="input" Value="current://View/RootVisual/Cooked%20Angle/DomainComponent/Text" />
-                        <ServiceValueParameter ParamName="evalFunction" Value="value:if (INPUT &gt; 150 &amp;&amp; INPUT &lt; 210)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Angle" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:INPUT &gt; 150 &amp;&amp; INPUT &lt;= 210" />
                       </ConvertedValue>
                     </Property>
                     <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
@@ -2202,7 +2221,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Tablet/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Tablet/View/BackgroundColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -2211,7 +2230,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Tablet/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Tablet/View/BorderThickness" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderColor" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -2220,7 +2239,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Tablet/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Tablet/View/BorderColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Gradient%203/" Type="Container" Name="Hide" Delay="value:0">
                         <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
@@ -2260,7 +2279,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BackgroundColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -2269,7 +2288,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BorderThickness" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderColor" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -2278,7 +2297,7 @@ Excel Interface Asset]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BorderColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Gradient%203/" Type="Container" Name="Show" Delay="value:0">
                         <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
@@ -2320,8 +2339,8 @@ Excel Interface Asset]]></Property>
                     <Property Type="Domain" Name="AllowToUncheck"><![CDATA[value:True]]></Property>
                     <Property Type="Domain" Name="IsChecked">
                       <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
-                        <ServiceValueParameter ParamName="input" Value="current://View/RootVisual/Cooked%20Angle/DomainComponent/Text" />
-                        <ServiceValueParameter ParamName="evalFunction" Value="value:if (INPUT &gt;= 90 &amp;&amp; INPUT &lt;= 150)&#xD;&#xA;&quot;True&quot;;&#xD;&#xA;else&#xD;&#xA;&quot;False&quot;;" />
+                        <ServiceValueParameter ParamName="input" Value="current://DomainComponent/Angle" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:INPUT &gt; 90 &amp;&amp; INPUT &lt;= 150" />
                       </ConvertedValue>
                     </Property>
                     <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
@@ -2387,7 +2406,7 @@ Excel Interface Asset]]></Property>
                     <Property Type="Domain" Name="IsChecked">
                       <ConvertedValue ConverterName="value:evalBC" ConverterInstance="player://converters/Eval/">
                         <ServiceValueParameter ParamName="input" Value="current://DomainComponent/YPos" />
-                        <ServiceValueParameter ParamName="evalFunction" Value="value:if (INPUT.replace(&quot;,&quot;,&quot;.&quot;) &gt;= 540)&#xD;&#xA;false&#xD;&#xA;else&#xD;&#xA;true" />
+                        <ServiceValueParameter ParamName="evalFunction" Value="value:if (INPUT &gt;= 540)&#xD;&#xA;false&#xD;&#xA;else&#xD;&#xA;true" />
                       </ConvertedValue>
                     </Property>
                     <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
@@ -2403,27 +2422,26 @@ Excel Interface Asset]]></Property>
             </Master>
           </DataSourceProvider>
         </Collection>
-        <Asset Name="Do a swipe leftrigh" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
+        <Asset Name="Mode 1" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
           <Properties>
-            <Property Type="Domain" Name="Text"><![CDATA[value:Do a swipe left/right gesture on the background to try 2 different interaction modes with the tangible objects.
-Press space to open the debug window]]></Property>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Mode 1]]></Property>
             <Property Type="Visual" Name="Font">
               <Typeface>
                 <Family>Raleway</Family>
                 <Stretch>normal</Stretch>
-                <Weight>300</Weight>
-                <Style>italic</Style>
+                <Weight>400</Weight>
+                <Style>normal</Style>
               </Typeface>
             </Property>
-            <Property Type="Visual" Name="FontSize"><![CDATA[value:25]]></Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:40]]></Property>
             <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
-            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
             <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
             <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-            <Property Type="Visual" Name="Alignment"><![CDATA[value:Right]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
             <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:False]]></Property>
-            <Property Type="Container" Name="X"><![CDATA[value:1587]]></Property>
-            <Property Type="Container" Name="Y"><![CDATA[value:1000]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:334]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
             <Property Type="Container" Name="Width"><![CDATA[value:609]]></Property>
             <Property Type="Container" Name="Height"><![CDATA[value:120]]></Property>
             <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -2431,7 +2449,7 @@ Press space to open the debug window]]></Property>
         </Asset>
         <Collection Name="TUIO objects list" Visual="AssetGrid" Style="" Container="Static" ContainerStyle="">
           <ComposerExtensions>
-            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpanded" Value="False" />
             <Extension Name="IsExpandedInBindingViews" Value="True" />
           </ComposerExtensions>
           <Properties>
@@ -2653,7 +2671,7 @@ Press space to open the debug window]]></Property>
         <Asset Name="Debug Mode Controlle" Visual="ToggleButton" Style="Simple Toggle Button" Container="Static" Domain="value:ToggleButton">
           <Attachments>
             <EventTrigger EventType="Domain" EventName="Checked">
-              <InvokeService Target="player://visuals/TUIO%20-%20ISE%202019/Mode%201/Main/TUIO%20objects%20list/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <InvokeService Target="player://visuals/TUIO%20-%20Sample/Mode%201/Main/TUIO%20objects%20list/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
                 <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
                 <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                 <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -2665,7 +2683,7 @@ Press space to open the debug window]]></Property>
               </InvokeService>
             </EventTrigger>
             <EventTrigger EventType="Domain" EventName="Unchecked">
-              <InvokeService Target="player://visuals/TUIO%20-%20ISE%202019/Mode%201/Main/TUIO%20objects%20list/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
+              <InvokeService Target="player://visuals/TUIO%20-%20Sample/Mode%201/Main/TUIO%20objects%20list/" Type="Container" Name="AnimatedMoveTo" Delay="value:0">
                 <ServiceValueParameter ParamName="dX" Value="value:2246" />
                 <ServiceValueParameter ParamName="dY" Value="value:528" />
                 <ServiceValueParameter ParamName="dDuration" Value="value:0.5" />
@@ -2715,7 +2733,8 @@ Press space to open the debug window]]></Property>
         <Extension Name="TranslateYOnScene" Value="-540" />
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
-            <Attribute Key="b5c3881b-7dcd-4790-b4a8-6bdee6458965" Value="False" />
+            <Attribute Key="49cdb506ac2b306165a6c78dbd0854ec1364ad7416229705c64f806228ad28d2" Value="False" />
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
           </ComplexAttributes>
         </Extension>
         <Extension Name="ViewPortXOnScene" Value="2021.05263157895" />
@@ -2775,7 +2794,7 @@ Press space to open the debug window]]></Property>
             <Master>
               <Collection Name="Template for items of TUIOObjects" Visual="Group" Style="" Container="Static" ContainerStyle="">
                 <ComposerExtensions>
-                  <Extension Name="IsExpanded" Value="False" />
+                  <Extension Name="IsExpanded" Value="True" />
                   <Extension Name="IsExpandedInTriggerActionsView" Value="True" />
                   <Extension Name="IsExpandedInBindingViews" Value="True" />
                 </ComposerExtensions>
@@ -3262,7 +3281,7 @@ Press space to open the debug window]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
@@ -3285,17 +3304,17 @@ Press space to open the debug window]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
-                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BackgroundColor]]></Property>
-                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
+                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BackgroundColor]]></Property>
+                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
                       <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
                       <Property Type="Container" Name="X"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
-                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
-                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
+                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
+                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
                       <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
                     </Properties>
                   </Asset>
@@ -3347,7 +3366,7 @@ Press space to open the debug window]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
@@ -3370,15 +3389,15 @@ Press space to open the debug window]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
-                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BackgroundColor]]></Property>
-                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
+                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BackgroundColor]]></Property>
+                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
                       <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
-                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
-                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
+                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
+                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
                       <Property Type="Container" Name="X"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -3437,7 +3456,7 @@ Press space to open the debug window]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
@@ -3460,15 +3479,15 @@ Press space to open the debug window]]></Property>
                     <Properties>
                       <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
                       <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
-                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
+                      <Property Type="Visual" Name="BorderColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderColor]]></Property>
                       <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
-                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BackgroundColor]]></Property>
-                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
+                      <Property Type="Visual" Name="BackgroundColor"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BackgroundColor]]></Property>
+                      <Property Type="Visual" Name="BorderThickness"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/View/BorderThickness]]></Property>
                       <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
-                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
-                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20ISE%202019/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
+                      <Property Type="Container" Name="Width"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Width]]></Property>
+                      <Property Type="Container" Name="Height"><![CDATA[player://visuals/TUIO%20-%20Sample/Design/Handle%20Circle%20Unselected%20Template/ContainerInterface/Height]]></Property>
                       <Property Type="Container" Name="X"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Y"><![CDATA[value:50]]></Property>
                       <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
@@ -3702,7 +3721,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Wall/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Wall/View/BackgroundColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
@@ -3711,7 +3730,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Wall/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Wall/View/BorderThickness" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderColor" Delay="value:0">
@@ -3720,7 +3739,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Wall/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Wall/View/BorderColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Gradient%201/" Type="Container" Name="Hide" Delay="value:0">
@@ -3761,7 +3780,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BackgroundColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
@@ -3770,7 +3789,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BorderThickness" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Handle%20Circle/" Type="Visual" Name="SetBorderColor" Delay="value:0">
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
@@ -3779,7 +3798,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Wall/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Wall/View/BorderColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Wall/Gradient%201/" Type="Container" Name="Show" Delay="value:0">
                         <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
@@ -3851,7 +3870,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBackgroundColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Kiosk/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Kiosk/View/BackgroundColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -3860,7 +3879,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Kiosk/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Kiosk/View/BorderThickness" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -3869,7 +3888,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Kiosk/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Kiosk/View/BorderColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -3909,7 +3928,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBackgroundColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BackgroundColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -3918,7 +3937,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BorderThickness" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -3927,7 +3946,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Kiosk/Handle%20Circle%202/" Type="Visual" Name="SetBorderColor" Delay="value:0">
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Kiosk/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Kiosk/View/BorderColor" />
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
                         <ServiceValueParameter ParamName="eTweeningTypes" Value="value:eEaseInOut" />
                         <ServiceValueParameter ParamName="nRunningCount" Value="value:1" />
@@ -4011,7 +4030,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Tablet/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Tablet/View/BackgroundColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -4020,7 +4039,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Tablet/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Tablet/View/BorderThickness" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderColor" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -4029,7 +4048,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Selected%20Tablet/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Selected%20Tablet/View/BorderColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Gradient%203/" Type="Container" Name="Hide" Delay="value:0">
                         <ServiceValueParameter ParamName="showOtherAssetsInCollection" Value="value:False" />
@@ -4069,7 +4088,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BackgroundColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BackgroundColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderThickness" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -4078,7 +4097,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BorderThickness" />
+                        <ServiceValueParameter ParamName="thickness" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BorderThickness" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Handle%20Circle%201/" Type="Visual" Name="SetBorderColor" Delay="value:0">
                         <ServiceValueParameter ParamName="dDuration" Value="value:0" />
@@ -4087,7 +4106,7 @@ Press space to open the debug window]]></Property>
                         <ServiceValueParameter ParamName="eRepeatBehavior" Value="value:eAutoReverse" />
                         <ServiceValueParameter ParamName="dDelayBeforeRepeat" Value="value:0" />
                         <ServiceValueParameter ParamName="bResetAtEnd" Value="value:False" />
-                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20ISE%202019/Design/Unselected%20Tablet/View/BorderColor" />
+                        <ServiceValueParameter ParamName="color" Value="player://visuals/TUIO%20-%20Sample/Design/Unselected%20Tablet/View/BorderColor" />
                       </InvokeService>
                       <InvokeService Target="current://view/RootVisual/Handle%20Group%20Tablet/Gradient%203/" Type="Container" Name="Show" Delay="value:0">
                         <ServiceValueParameter ParamName="hideOtherAssetsInCollection" Value="value:False" />
@@ -4141,6 +4160,582 @@ Press space to open the debug window]]></Property>
             </Master>
           </DataSourceProvider>
         </Collection>
+        <Asset Name="Mode 2" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Mode 2]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Raleway</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:40]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:334]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:609]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:120]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+      </Layer>
+    </Space>
+    <Space Name="Mode-Predefined IDs" AutoReset="true">
+      <ComposerExtensions>
+        <Extension Name="Notifications" Value="">
+          <ComplexAttributes>
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
+          </ComplexAttributes>
+        </Extension>
+        <Extension Name="GuideLines" Value="">
+          <ComplexAttributes>
+            <Attribute Key="AreVisible" Value="True" />
+            <Attribute Key="GuideLinesColor" Value="#FFD74AE6" />
+            <Attribute Key="VerticalLines" Value="" />
+          </ComplexAttributes>
+        </Extension>
+        <Extension Name="ViewPortXOnScene" Value="2461.73414343309" />
+        <Extension Name="ViewPortYOnScene" Value="1951.50758048947" />
+        <Extension Name="TranslateXOnScene" Value="-952.583747807592" />
+        <Extension Name="TranslateYOnScene" Value="-437.902114965637" />
+      </ComposerExtensions>
+      <Layer Name="Layer 1" Visual="Pinboard" LayerType="Default">
+        <ComposerExtensions>
+          <Extension Name="IsExpanded" Value="True" />
+          <Extension Name="IsExpandedInBindingViews" Value="True" />
+        </ComposerExtensions>
+        <Attachments>
+          <EventTrigger EventType="Container" EventName="ItemDropped">
+            <CreateAsset Delay="value:0.0" />
+          </EventTrigger>
+          <EventTrigger EventType="Visual" EventName="CollectionItemDropped">
+            <CreateAsset Delay="value:0.0" />
+          </EventTrigger>
+        </Attachments>
+        <Properties>
+          <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+          <Property Type="Visual" Name="ItemShadow"><![CDATA[value:NoShadow]]></Property>
+        </Properties>
+        <Collection Name="Template for Tag 1" Visual="Group" Style="" Container="Static" ContainerStyle="">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+            <Extension Name="HasBeenRenamed" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:500]]></Property>
+            <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[1]/XPos]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[1]/YPos]]></Property>
+            <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[1]/Angle]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:350]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:350]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:350]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:350]]></Property>
+          </Properties>
+          <Collection Name="Wall Collection" Visual="Circular Panel" Style="" Container="Default" ContainerStyle="">
+            <ComposerExtensions>
+              <Extension Name="IsExpanded" Value="True" />
+              <Extension Name="IsExpandedInBindingViews" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Visual" Name="ItemSpacing"><![CDATA[value:3]]></Property>
+              <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="FillDirection"><![CDATA[value:TopToBottom]]></Property>
+              <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Rows"><![CDATA[value:1]]></Property>
+              <Property Type="Visual" Name="ItemWidth"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="ItemHeight"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="CenterJustify"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="ScrollOffset"><![CDATA[value:15]]></Property>
+              <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="InitialScrollEffect"><![CDATA[value:False]]></Property>
+              <Property Type="Visual" Name="IsTapEnabled"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="ResizeRatioForOpenedItem"><![CDATA[value:2]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:350]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:350]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00CCCCCC]]></Property>
+              <Property Type="Visual" Name="ItemFillColor"><![CDATA[value:#00CCCCCC]]></Property>
+              <Property Type="Visual" Name="CircularPanelAngle"><![CDATA[value:360]]></Property>
+              <Property Type="Visual" Name="ItemAngle"><![CDATA[value:69]]></Property>
+              <Property Type="Visual" Name="InnerRadius"><![CDATA[value:0.25]]></Property>
+            </Properties>
+            <DataSourceProvider>
+              <DataSource>
+                <Contract Uri="player://externals/Wall/Rows" />
+              </DataSource>
+              <Master>
+                <Asset Name="path" Visual="DefaultImage" Style="" Container="Fill" ContainerStyle="" Domain="value:Image">
+                  <Properties>
+                    <Property Type="Domain" Name="Source"><![CDATA[current://DomainComponent/path]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fill]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:100]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:85]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:190]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:160]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+              </Master>
+            </DataSourceProvider>
+          </Collection>
+          <Asset Name="Gradient" Visual="DefaultEllipse" Style="" Container="Default" ContainerStyle="" Domain="value:Ellipse">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:218.75]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:218.75]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor">
+                <BackgroundColor OriginPoint="0.5,0.5" CenterPoint="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                  <GradientStop Color="#FF000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="0.526153846153845" />
+                </BackgroundColor>
+              </Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Ellipse BG" Visual="DefaultEllipse" Style="" Container="No resize" ContainerStyle="" Domain="value:Ellipse">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF606060]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:87.5]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:87.5]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="SymbolID" Visual="DefaultText" Style="" Container="No resize" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[1]/SymbolId]]></Property>
+              <Property Type="Visual" Name="Font">
+                <Typeface>
+                  <Family>Montserrat</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>700</Weight>
+                  <Style>normal</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:40]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFEEEFEF]]></Property>
+              <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:80.208333333333329]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:80.208333333333329]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Template for Tag 2" Visual="Group" Style="" Container="Static" ContainerStyle="">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:500]]></Property>
+            <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[2]/XPos]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[2]/YPos]]></Property>
+            <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[2]/Angle]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:350]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:350]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:350]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:350]]></Property>
+          </Properties>
+          <Collection Name="Wall Collection 1" Visual="Circular Panel" Style="" Container="Default" ContainerStyle="">
+            <ComposerExtensions>
+              <Extension Name="IsExpanded" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Visual" Name="ItemSpacing"><![CDATA[value:3]]></Property>
+              <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="FillDirection"><![CDATA[value:TopToBottom]]></Property>
+              <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Rows"><![CDATA[value:1]]></Property>
+              <Property Type="Visual" Name="ItemWidth"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="ItemHeight"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="CenterJustify"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="ScrollOffset"><![CDATA[value:15]]></Property>
+              <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="InitialScrollEffect"><![CDATA[value:False]]></Property>
+              <Property Type="Visual" Name="IsTapEnabled"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="ResizeRatioForOpenedItem"><![CDATA[value:2]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:350]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:350]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00CCCCCC]]></Property>
+              <Property Type="Visual" Name="ItemFillColor"><![CDATA[value:#00CCCCCC]]></Property>
+              <Property Type="Visual" Name="CircularPanelAngle"><![CDATA[value:360]]></Property>
+              <Property Type="Visual" Name="ItemAngle"><![CDATA[value:48]]></Property>
+              <Property Type="Visual" Name="InnerRadius"><![CDATA[value:0.25]]></Property>
+            </Properties>
+            <DataSourceProvider>
+              <DataSource>
+                <Contract Uri="player://externals/Kiosk/Rows" />
+              </DataSource>
+              <Master>
+                <Asset Name="path 1" Visual="DefaultImage" Style="" Container="Fill" ContainerStyle="" Domain="value:Image">
+                  <Properties>
+                    <Property Type="Domain" Name="Source"><![CDATA[current://DomainComponent/path]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fill]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:100]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:85]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:190]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:160]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+              </Master>
+            </DataSourceProvider>
+          </Collection>
+          <Asset Name="Gradient 1" Visual="DefaultEllipse" Style="" Container="Default" ContainerStyle="" Domain="value:Ellipse">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:218.75]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:218.75]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor">
+                <BackgroundColor OriginPoint="0.5,0.5" CenterPoint="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                  <GradientStop Color="#FF000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="0.526153846153845" />
+                </BackgroundColor>
+              </Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Ellipse BG 1" Visual="DefaultEllipse" Style="" Container="No resize" ContainerStyle="" Domain="value:Ellipse">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF606060]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:87.5]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:87.5]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="SymbolID 1" Visual="DefaultText" Style="" Container="No resize" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[2]/SymbolId]]></Property>
+              <Property Type="Visual" Name="Font">
+                <Typeface>
+                  <Family>Montserrat</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>700</Weight>
+                  <Style>normal</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:40]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFEEEFEF]]></Property>
+              <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:80.208333333333329]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:80.208333333333329]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Collection Name="Template for Tag 3" Visual="Group" Style="" Container="Static" ContainerStyle="">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="False" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinWidth"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MinHeight"><![CDATA[value:0]]></Property>
+            <Property Type="Container" Name="MaxWidth"><![CDATA[value:4000]]></Property>
+            <Property Type="Container" Name="MaxHeight"><![CDATA[value:4000]]></Property>
+            <Property Type="Visual" Name="ItemWidth"><![CDATA[value:300]]></Property>
+            <Property Type="Visual" Name="ItemHeight"><![CDATA[value:500]]></Property>
+            <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[3]/XPos]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[3]/YPos]]></Property>
+            <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:True]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[3]/Angle]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:350]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:350]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:350]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:350]]></Property>
+          </Properties>
+          <Collection Name="Wall Collection 2" Visual="Circular Panel" Style="" Container="Default" ContainerStyle="">
+            <ComposerExtensions>
+              <Extension Name="IsExpanded" Value="True" />
+            </ComposerExtensions>
+            <Properties>
+              <Property Type="Visual" Name="ItemSpacing"><![CDATA[value:3]]></Property>
+              <Property Type="Visual" Name="ShowFeedback"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="FillDirection"><![CDATA[value:TopToBottom]]></Property>
+              <Property Type="Visual" Name="BackgroundRadius"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Rows"><![CDATA[value:1]]></Property>
+              <Property Type="Visual" Name="ItemWidth"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="ItemHeight"><![CDATA[value:200]]></Property>
+              <Property Type="Visual" Name="CenterJustify"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="ScrollOffset"><![CDATA[value:15]]></Property>
+              <Property Type="Visual" Name="ShowControls"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="InitialScrollEffect"><![CDATA[value:False]]></Property>
+              <Property Type="Visual" Name="IsTapEnabled"><![CDATA[value:True]]></Property>
+              <Property Type="Visual" Name="ResizeRatioForOpenedItem"><![CDATA[value:2]]></Property>
+              <Property Type="Visual" Name="OutlineColor"><![CDATA[value:#00CCCCCC]]></Property>
+              <Property Type="Visual" Name="ItemFillColor"><![CDATA[value:#00CCCCCC]]></Property>
+              <Property Type="Visual" Name="CircularPanelAngle"><![CDATA[value:360]]></Property>
+              <Property Type="Visual" Name="ItemAngle"><![CDATA[value:87]]></Property>
+              <Property Type="Visual" Name="InnerRadius"><![CDATA[value:0.25]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:350]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:350]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+            <DataSourceProvider>
+              <DataSource>
+                <Contract Uri="player://externals/Tablet/Rows" />
+              </DataSource>
+              <Master>
+                <Asset Name="path 2" Visual="DefaultImage" Style="" Container="Fill" ContainerStyle="" Domain="value:Image">
+                  <Properties>
+                    <Property Type="Domain" Name="Source"><![CDATA[current://DomainComponent/path]]></Property>
+                    <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+                    <Property Type="Visual" Name="DisplayFillBehavior"><![CDATA[value:Fill]]></Property>
+                    <Property Type="Container" Name="X"><![CDATA[value:100]]></Property>
+                    <Property Type="Container" Name="Y"><![CDATA[value:85]]></Property>
+                    <Property Type="Container" Name="Width"><![CDATA[value:190]]></Property>
+                    <Property Type="Container" Name="Height"><![CDATA[value:160]]></Property>
+                    <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+                  </Properties>
+                </Asset>
+              </Master>
+            </DataSourceProvider>
+          </Collection>
+          <Asset Name="Gradient 2" Visual="DefaultEllipse" Style="" Container="Default" ContainerStyle="" Domain="value:Ellipse">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:218.75]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:218.75]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor">
+                <BackgroundColor OriginPoint="0.5,0.5" CenterPoint="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                  <GradientStop Color="#FF000000" Offset="0" />
+                  <GradientStop Color="#00000000" Offset="0.526153846153845" />
+                </BackgroundColor>
+              </Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="IsVisible"><![CDATA[value:True]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Ellipse BG 2" Visual="DefaultEllipse" Style="" Container="No resize" ContainerStyle="" Domain="value:Ellipse">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF606060]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:87.5]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:87.5]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="SymbolID 2" Visual="DefaultText" Style="" Container="No resize" ContainerStyle="" Domain="value:Text">
+            <Properties>
+              <Property Type="Domain" Name="Text"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[3]/SymbolId]]></Property>
+              <Property Type="Visual" Name="Font">
+                <Typeface>
+                  <Family>Montserrat</Family>
+                  <Stretch>normal</Stretch>
+                  <Weight>700</Weight>
+                  <Style>normal</Style>
+                </Typeface>
+              </Property>
+              <Property Type="Visual" Name="FontSize"><![CDATA[value:40]]></Property>
+              <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFEEEFEF]]></Property>
+              <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="Alignment"><![CDATA[value:Center]]></Property>
+              <Property Type="Visual" Name="Bold"><![CDATA[value:False]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:175]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:80.208333333333343]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:80.208333333333343]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
+        <Asset Name="Mode Predefined IDs" Visual="DefaultText" Style="" Container="Static" ContainerStyle="" Domain="value:Text">
+          <Properties>
+            <Property Type="Domain" Name="Text"><![CDATA[value:Mode Predefined IDs]]></Property>
+            <Property Type="Visual" Name="Font">
+              <Typeface>
+                <Family>Raleway</Family>
+                <Stretch>normal</Stretch>
+                <Weight>400</Weight>
+                <Style>normal</Style>
+              </Typeface>
+            </Property>
+            <Property Type="Visual" Name="FontSize"><![CDATA[value:40]]></Property>
+            <Property Type="Visual" Name="FontColor"><![CDATA[value:#FFFFFFFF]]></Property>
+            <Property Type="Visual" Name="VerticalAlignment"><![CDATA[value:Top]]></Property>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Visual" Name="Alignment"><![CDATA[value:Left]]></Property>
+            <Property Type="Container" Name="IsHitTestVisible"><![CDATA[value:False]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[value:334]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[value:80]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:609]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:120]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+          </Properties>
+        </Asset>
+        <Collection Name="Group" Visual="Group" Style="" Container="Static">
+          <ComposerExtensions>
+            <Extension Name="IsExpanded" Value="True" />
+            <Extension Name="IsExpandedInBindingViews" Value="True" />
+          </ComposerExtensions>
+          <Properties>
+            <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+            <Property Type="Container" Name="X"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[4]/XPos]]></Property>
+            <Property Type="Container" Name="Y"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[4]/YPos]]></Property>
+            <Property Type="Container" Name="Orientation"><![CDATA[player://externals/TUIOTagIA%20-%20PreDefined/TUIOObjects/[4]/Angle]]></Property>
+            <Property Type="Visual" Name="InitialWidth"><![CDATA[value:300]]></Property>
+            <Property Type="Container" Name="Width"><![CDATA[value:300]]></Property>
+            <Property Type="Visual" Name="InitialHeight"><![CDATA[value:332]]></Property>
+            <Property Type="Container" Name="Height"><![CDATA[value:332]]></Property>
+          </Properties>
+          <Asset Name="Ellipse" Visual="DefaultEllipse" Style="" Container="Default" ContainerStyle="" Domain="value:Ellipse">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Visual" Name="BorderColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FF000000]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="Flat"><![CDATA[value:True]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:150]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:182]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:300]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:300]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+          <Asset Name="Rectangle" Visual="DefaultRectangle" Style="" Container="Default" ContainerStyle="" Domain="value:Rectangle">
+            <Properties>
+              <Property Type="Container" Name="MinimizedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedPressedImage"><![CDATA[player://data/DefaultAssets/DefaultMinimized.png]]></Property>
+              <Property Type="Container" Name="MinimizedWidth"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="MinimizedHeight"><![CDATA[value:50]]></Property>
+              <Property Type="Container" Name="DisplayButtonsRadius"><![CDATA[value:19]]></Property>
+              <Property Type="Visual" Name="BorderThickness"><![CDATA[value:0]]></Property>
+              <Property Type="Visual" Name="BackgroundColor"><![CDATA[value:#FFFFFFFF]]></Property>
+              <Property Type="Container" Name="X"><![CDATA[value:153]]></Property>
+              <Property Type="Container" Name="Y"><![CDATA[value:32]]></Property>
+              <Property Type="Container" Name="Width"><![CDATA[value:119]]></Property>
+              <Property Type="Container" Name="Height"><![CDATA[value:64]]></Property>
+              <Property Type="Container" Name="Orientation"><![CDATA[value:0]]></Property>
+            </Properties>
+          </Asset>
+        </Collection>
       </Layer>
     </Space>
   </Spaces>
@@ -4154,7 +4749,8 @@ Press space to open the debug window]]></Property>
       <ComposerExtensions>
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
-            <Attribute Key="b5c3881b-7dcd-4790-b4a8-6bdee6458965" Value="False" />
+            <Attribute Key="49cdb506ac2b306165a6c78dbd0854ec1364ad7416229705c64f806228ad28d2" Value="False" />
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
           </ComplexAttributes>
         </Extension>
       </ComposerExtensions>
@@ -4163,7 +4759,8 @@ Press space to open the debug window]]></Property>
       <ComposerExtensions>
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
-            <Attribute Key="b5c3881b-7dcd-4790-b4a8-6bdee6458965" Value="False" />
+            <Attribute Key="49cdb506ac2b306165a6c78dbd0854ec1364ad7416229705c64f806228ad28d2" Value="False" />
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
           </ComplexAttributes>
         </Extension>
       </ComposerExtensions>
@@ -4172,7 +4769,8 @@ Press space to open the debug window]]></Property>
       <ComposerExtensions>
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
-            <Attribute Key="b5c3881b-7dcd-4790-b4a8-6bdee6458965" Value="False" />
+            <Attribute Key="49cdb506ac2b306165a6c78dbd0854ec1364ad7416229705c64f806228ad28d2" Value="False" />
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
           </ComplexAttributes>
         </Extension>
       </ComposerExtensions>
@@ -4181,7 +4779,8 @@ Press space to open the debug window]]></Property>
       <ComposerExtensions>
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
-            <Attribute Key="b5c3881b-7dcd-4790-b4a8-6bdee6458965" Value="False" />
+            <Attribute Key="49cdb506ac2b306165a6c78dbd0854ec1364ad7416229705c64f806228ad28d2" Value="False" />
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
           </ComplexAttributes>
         </Extension>
       </ComposerExtensions>
@@ -4190,10 +4789,27 @@ Press space to open the debug window]]></Property>
       <ComposerExtensions>
         <Extension Name="Notifications" Value="">
           <ComplexAttributes>
-            <Attribute Key="b5c3881b-7dcd-4790-b4a8-6bdee6458965" Value="False" />
+            <Attribute Key="49cdb506ac2b306165a6c78dbd0854ec1364ad7416229705c64f806228ad28d2" Value="False" />
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
           </ComplexAttributes>
         </Extension>
       </ComposerExtensions>
+    </ExternalAsset>
+    <ExternalAsset Name="TUIOTagIA - PreDefined" DescriptorPath="player://resources/4634e72c-86e3-449a-a3f5-1bee70b2c376" ExternalAssetName="TUIOTagIA">
+      <ComposerExtensions>
+        <Extension Name="Notifications" Value="">
+          <ComplexAttributes>
+            <Attribute Key="933c87aedd12e0e8977a31ffc0e32c61d271156a3fa0f866364b084ca7df5016" Value="False" />
+          </ComplexAttributes>
+        </Extension>
+      </ComposerExtensions>
+      <Properties>
+        <Property Type="Domain" Name="UsePredefinedIDs"><![CDATA[value:True]]></Property>
+        <Property Type="Domain" Name="PredefinedIDs"><![CDATA[value:1,2,3,24]]></Property>
+        <Property Type="Domain" Name="YOffset"><![CDATA[value:-300]]></Property>
+        <Property Type="Domain" Name="XPHeight"><![CDATA[value:1080]]></Property>
+        <Property Type="Domain" Name="XOffset"><![CDATA[value:400]]></Property>
+      </Properties>
     </ExternalAsset>
   </ExternalAssets>
   <Resources>
@@ -4512,12 +5128,12 @@ Press space to open the debug window]]></Property>
         <Tags>icon</Tags>
       </Infos>
     </Resource>
-    <Resource Key="a13c7932-7a30-45aa-a063-e488419210a8" Type="snapshot" Length="326114" LastModificationDate="2019-02-14T14:04:58.7612958Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
+    <Resource Key="a13c7932-7a30-45aa-a063-e488419210a8" Type="snapshot" Length="324946" LastModificationDate="2020-03-06T16:13:26.8279575Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/default.png" />
     <Resource Key="4634e72c-86e3-449a-a3f5-1bee70b2c376" Type="uri" Length="5300" LastModificationDate="2019-01-26T09:19:35.5805545Z" DefaultValue="player://data/InterfaceAssets/TUIOTagIA/TUIOTagIA.ifd">
       <Dependencies>
         <Dependency URI="player://data/InterfaceAssets/TUIOTagIA/libTUIO.dll" Length="35328" LastModificationDate="2014-11-21T15:21:38Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/TUIOTagIA/TUIOTagIA.dll" Length="12800" LastModificationDate="2019-01-26T09:21:13.9904832Z" Archive="SmallFiles.zip" />
-        <Dependency URI="player://data/InterfaceAssets/TUIOTagIA/TUIOTagIA.pdb" Length="32256" LastModificationDate="2019-01-26T09:21:13.9904832Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/TUIOTagIA/TUIOTagIA.dll" Length="12800" LastModificationDate="2020-01-05T16:16:41.8800397Z" Archive="SmallFiles.zip" />
+        <Dependency URI="player://data/InterfaceAssets/TUIOTagIA/TUIOTagIA.pdb" Length="34304" LastModificationDate="2020-01-05T16:16:41.8800397Z" Archive="SmallFiles.zip" />
       </Dependencies>
     </Resource>
     <Resource Key="c6f3c093-50f9-497e-a77c-8bc051f55286" Type="uri" Length="1428" LastModificationDate="2018-12-18T16:41:16Z" DefaultValue="player://data/InterfaceAssets/EvalBC/EvalBC.ifd">
@@ -4897,13 +5513,12 @@ Press space to open the debug window]]></Property>
       </Dependencies>
     </Resource>
     <Resource Key="07fa5edb-cf54-48e6-a371-eed46a1bcf54" Type="uri" Length="3048" LastModificationDate="2019-01-25T15:04:12.5473162Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Logo_intuiface_white_325_95.png" />
-    <Resource Key="a0135de3-6e3f-4108-b8c9-610a67ad5aa8" Type="snapshot" Length="48239" LastModificationDate="2019-01-25T15:26:04.8248481Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/33d0780f.png" />
     <Resource Key="35c14caf-f6ed-43ea-a2ed-dbd1470ad843" Type="uri" Length="12497231" LastModificationDate="2015-03-17T09:22:50.6982703Z" DefaultValue="player://data/Videos/Bubbles-Blue.wmv" />
-    <Resource Key="cf06be6e-0739-40ed-ada2-582d0adf6844" Type="snapshot" Length="326114" LastModificationDate="2019-02-14T14:04:58.7612958Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/10310e2.png" />
-    <Resource Key="c71c68c4-b287-4a65-be60-0011bbfb847a" Type="snapshot" Length="314825" LastModificationDate="2019-02-14T09:49:08.0299392Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/a3aa857d.png" />
+    <Resource Key="cf06be6e-0739-40ed-ada2-582d0adf6844" Type="snapshot" Length="324946" LastModificationDate="2020-03-06T16:13:26.8279575Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/10310e2.png" />
+    <Resource Key="c71c68c4-b287-4a65-be60-0011bbfb847a" Type="snapshot" Length="325070" LastModificationDate="2020-03-05T23:49:16.4746538Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/a3aa857d.png" />
     <Resource Key="d98e3742-04cc-401b-9ac9-c5122cc7c39b" Type="uri" Length="4425" LastModificationDate="2018-06-29T13:35:29.6468614Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/logo_intuiface-color_1.png" />
     <Resource Key="1e3ae04c-abe7-4784-98ad-f8529ef3a574" Type="uri" Length="11903" LastModificationDate="2015-06-18T08:50:57.0133063Z" Archive="SmallFiles.zip" DefaultValue="player://data/Images/Circle-Close-White-Released_1.png">
-      <Alternate Value="player://data/Generated/661ab4e5c5669e8fa9fb99c1d24e76cb.png" Width="50" Height="50" Length="1567" LastModificationDate="2019-01-28T17:40:46.9740787Z" Archive="SmallFiles.zip" />
+      <Alternate Value="player://data/Generated/add548eb4eb9a340860318e3541b8d4d.png" Width="50" Height="50" Length="1567" LastModificationDate="2020-03-05T21:53:59.3328101Z" Archive="SmallFiles.zip" />
     </Resource>
     <Resource Key="ca15a310-3388-4ed4-8ce0-061461030eff" Type="uri" Length="9546" LastModificationDate="2018-12-18T16:43:58Z" DefaultValue="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.ifd">
       <Dependencies>
@@ -4911,10 +5526,12 @@ Press space to open the debug window]]></Property>
         <Dependency URI="player://data/InterfaceAssets/TextManipulationBC/TextManipulationBC.js" Length="6514" LastModificationDate="2018-12-18T16:41:16Z" Archive="SmallFiles.zip" />
       </Dependencies>
     </Resource>
+    <Resource Key="79ab759c-9818-4817-984c-ce1935323e56" Type="snapshot" Length="374869" LastModificationDate="2020-03-05T23:45:56.2823495Z" Archive="Snapshots.zip" DefaultValue="player://data/Snapshots/73daf2d4.png" />
   </Resources>
   <Sequence>
-    <SpaceRef Space="player://visuals/TUIO%20-%20ISE%202019/Mode%201/" />
-    <SpaceRef Space="player://visuals/TUIO%20-%20ISE%202019/Mode%202/" />
+    <SpaceRef Space="player://visuals/TUIO%20-%20Sample/Mode%201/" />
+    <SpaceRef Space="player://visuals/TUIO%20-%20Sample/Mode%202/" />
+    <SpaceRef Space="player://visuals/TUIO%20-%20Sample/Mode-Predefined%20IDs/" />
   </Sequence>
   <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
     <SignedInfo>
@@ -4925,18 +5542,18 @@ Press space to open the debug window]]></Property>
           <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
         </Transforms>
         <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <DigestValue>38V7PJ+4V59PZHqB7q3hF9lmvrs=</DigestValue>
+        <DigestValue>7qNCNwI9MtzPYXe++sP/qaTRPZc=</DigestValue>
       </Reference>
     </SignedInfo>
-    <SignatureValue>P2qRVS/67T+CuYa217O7Sqw2U2U0oiPokWnDi1aIgxfGHD7wp+nBOhffkDGd6BoqzKrteRC3ZVgRNVyp9r+BZiVuwGOl5n+R2xyrlTs8zHyy9Nd4OJQ4Lb1mrvaUqmu/RyeZUnh/B7MSJGmVHd1y+Z706OgqMfVZ5Bp3jkX7zNBFQCg16C0WaAZS5AIsRpqV6MuzH74ZM6TnWf+3BNNxC9ZHVgVqTRFMerGI0KL7FZZhp6caYpViVXpIb0VHvBCAsvc6XTAJb0AeJsjduXu73rSq7m5IKKs0CjhOWB6OUFnDkXrrE52v5FvRe9aM7jx4gRDKex1RWVw4IZH9/b0ZXQ==</SignatureValue>
+    <SignatureValue>ro2ErOiEvUvcrwrGlD0y3XpqdRcim/hHnOnvImZ1euw3TnpLvH09JU53JXON5oQE/lPN6IHGHl+zEIgdzluN4gCMqWml1/cNgozZ/l+Pv490UGWH3imGGrFQdOVJoIPL7i3pzBBV8DOWTXTe4qlsYO4KHkjxLkXO1x6WMU0DCLxMp8n5cBKAjun9GZ/asFPNiKOdUTdIyJG3riMBBWfj1kgjklzJmX04Kq0IkiFsj37tT7ArKh2g7TXgRZKI+Cs8FLxh48+CleALp9IodCUwsxq6oC79nkAUjAbrW50hs6nDH2/6qA+P16t52bMwJTJE0IRV+H+NHaawTr+FzvU3rA==</SignatureValue>
     <Object Id="private" MimeType="text/xml" Encoding="utf-8">
       <SignatureData xmlns="">
         <EditonLevel>ENTERPRISE</EditonLevel>
         <HostName>SCIRPE</HostName>
-        <Data><![CDATA[Jnbf7IxV33eizxoDsO7xB75Z35q98e5Cg1JEXogMCFbg/NajOCsBiR782q/rtyRpdXZw1FmtZplpBUVxzh0/nZ84PBW86IVs970yn5ssJFyXjeAorS4Amc9SgDSpt/QVX9RXA+eukmMkkPoVW674a2He3HWK7J4mDbN6sqDHFZy5yg832zx2TrI1eBg9g8OU9BMiDvtwBCJbTKa0faxLKPWDiAx7TrRgA9uXlvBW9sfrpxKSc6vx9phndw0JP95j5O/gK1NKnpGpSXSTWK1M4OeVTtqS4seiqx5XRPA39jcOKDuCOYnfhp6jYi60rNPDodEGYHJmV1icB+VPXil285o31PzJ4HE32/7k60J0bJ0bUcTfA7L8pFS2xc6x8kz9t1L6vg+dd9CIXThMTYUjRJUcJXRf52k2NzAxV67H4Sd2DjPDvleyPAYLsixHyUElAvjIBl0A3P37JkgUG+mXXefxIzBjHfuXRzsPVQce2NEqP2Hu7QjF3rCvr1SBcIA+3mxI6aeTRL8lmEZvlb2Ihe3RjqlW2YI7/Kw2Qtw6wTNXcjHG7Fs6bqmmpe+AbLPheSh/6TfMOBIe2ETAZvYCtP7qo/J2HNgwZut4NshhtsrdY2M2DsT60pPHekphVn+sqZwOPym5xX9nNXKbmORaLUwlXuZsrgEVFF9knpBxVW45aD72VOLgf7gaFJU0u4vom/9ZSutSCIfKE33RJop4WCPOHVmzq+Tdhg/Ahv3tctgZyb9ocxv6/y64JXnyoCmtgn5gIYny2bWH7YlOZ5RKz7GiaRBW3Ml/JyLMtWf3kpg5unlzOg/rB4ziIVq9cLZqgDcRCjNLxWqgbzYNmLUKoQ4QzvD4TI5gZnf0mwX39zSz/aew2/XVPe6EkTwa8jkahhQ1Xmzu+Lrqt8mhBZ2hUrMXwz2pa26IsUC/0QP6+nh5sN2SwWbOCg2fRECwA9EhjqAq8+jlQMsOdoSIKSWa/Yv1t46rm7JhBTm0K4LqC1Pcq4z4NubaJNrVA0RUkMcqSHkr2Go2D0BA5YLbRTkL32XUtUAGRMACvhxfZIXwtO0p058WW6QpDUPKqC1cVV2S2JBliZxykeJiys1QwicxqSo7/iPEMlYBegZNGWq8hjb7shCv9gDQ1/6D0VKLz1CDkGDdrgqlxpY7G1F+lhqeY0y2jErsQkAu8e2QWaYK23XjBaHytrCf7hAfAVfmy6DtTHtOtAfgLbLdz2E+7UtJSxCXhY8JvGS+iBAXMs3bwZnlt9eKf7BowpkDFQkmz5bd8340noFaBhZ+ifFm9KxM2htICZXzx15ZZc6YQfFru+rFdDdHTYccz00M6ouebkv8Vyog1G2puVL8fa9uH0F/sL6qkyx6d/TZCCnwt1bVHBDTldtz/6KCOMfWTZpwyAgZiVB2klnzdH1lQxdp7NOgX8YuojRC9bwJSB1JqHRHpjan1uFprPiMzvxYMRI/yVlYyj2ZL5ZWfNvNTu+J7MgZOzvrz1opvvcSgTx5z6SAU5kdPOBcgHVWh5JbcLLlSe1f3q+kzaa9JigKXtjk1qypfDuwkQGzfPi6CFkdVqQ6DV3vo0qkQ9UWEQIGQs9C3MZJG45mHlw+pqTfvtMvF7rTMoYOnMJe59pB1iBD8nhv2I4PvdGr7pdYD3kG1kd494cQ2d4Le+lfGGPbA4VxI9gmhuZ3gqRs/srHTt2yLdbg1/IezVCEAy5scidmp465fbCjc6qt9NjhXOCu7izdEodryubRIb7/W95X0w32Gr5bgA7tl2nc2qSDKl9q1N9opcY5peaf4cLpATiZwS4hsmbeED4IWTSts7DvvEfsIf8ewpdRFtdzYwj9QTY+4Xh7uDxEtQJrQBM4zq1ZWxJthksFGsNEMGy2jaZHsLt6LXQT9UxfcTbyP7u9haejnDZFpvcO6JD2li0O5CRpiT/ZWGXInhet5XZQYVYSw4Og5t8KwqHgpWssYyh8HrpNwgdPLn+iF1O/7vpMMsF/gQ3e4KU8oA5g5k+E/WH7vDPXvLla9xCsbyAhBHKUAR3seiK+HuwaWrVjNUYvWuy7YV9R1zN+TUAPZhlHVjrLFPO296X48OBFOAmF32BZeFa3Bglt9lkbY2F7rxo6Vlkysmsa9pzG+GC3/ZitY+YsA9Sr8R40JWs=]]></Data>
+        <Data><![CDATA[jpsM/cwOZh7GVN2Mrd8AI8aJPAlPjeqJX3XzigYTwqc73ZQHJ5+42BctHFRaetz5lr5brGs3IxUrhZ3a9ad1klSWgQwSpe9UxU73h2Wqv7ClxWCzl+svMfKK6DQ2R3SpsIKSRcbKa0VUFxW1psqDcOcBllVP0/xG2z7DSDFYrGdgn3dubcD3Iv1rFmlghYfEnF21Z9ZfA1CbtcJ7NFOCmpI1knEdHZwIQF9lQ52WUUfmSxtoKqGxj/UgohuhGn4qwA0lKhcpXxhEF59S/pyT+5RAjdE61RFJBdaLGyAsXxmbreBOODU9BkqF/UM1lB+0gQk7C8Kf8ePynsyVK94fh3jUItt5H4vjg3w2HCsBG9Sl32MrAJPwxMFSBrSEa34QfNVcTpnCrtJRNIX/ICNiYcjTItRWgIPAxAk8S/RZ0cIlMXGd8QW7pTlCMWxVmzPlqEYBCkxA30maCpRkD/SEdQ6lMsJHbwhGCG8oSfHjx3Dp4mQPUORWNsnhCYZJ7BDVIWb6lSGU9gvJPV40+rLeZxEwwv9CAF6StloJCBgkTze+6zNAmowa/RgpMSyOV+NUMPym3SSzc3BnCCHEcgKSAlNuE97QlMrEqMIUMiCAr/Fh8QlFDfBq6rvRG58SyCvienIEVsK48+TolTpdFxGnoajcj0N254ka0KCBslEgtQJJlyc8LUGQGdQPOJasMVIDli78Vz1Um4G6afr2pKP9fj/01WjErjn1tnwxoRH24/Fh5tAn33KzZEXLQufzSeMgoZKmnykgUXIKDd9F66qd6qh4MCJGmXSNin3jr7zqbVtMKHBI4PQwRqOXWPATKsiP4zTBXCsn2FupPjxupjidFm7CekD1OBlKFNzfpAiTukEV5ZGl5+kjRSHV+tpmRSe8mliTJUzZda8dc680OGWuA1DSXussFFVzblJZ7XbVaIlHkJ3S4pSOpv+4iUY46FWJGik0CQjCunfgHUY42uQT72rZTxlJg2mqDwreeLSraejeUpF1f8D4+2Pcuwz6CV7yU1MwTKNEbsl5fk5P5MUS5lRfxgYmiJBUFf40TGwol+8+rxfm/VfaLhw4xlleJxgZMp+SMS0ygO2D7Uu/9qlshKBZ1OKtsSBw01DjLexFDtCQsL+RfbAbwMiiSxCQuwVxKf13wwg7sxsHpzsuuW+t3AjGbVQTjoLuZxM/F627SL4oBM+ttDA8BM6leOa8LZfkGtH+tDl7obbN7W9T3NZFpXQBZmSQlU+A5GOJW1hLt5mT0SSdT0DYd0Ns/dCd3MYULPnGdS6Q7uvmiM1rQi0jU+Resp7sEHnCwkYdvF6WUzBQvhon50NlFh6NRBF57ZEa4ioXUJUlfE9HokqT7wkTMc3O+N5ViDz7TPGAlXpEgJxYUIa14aHp4rjFzvHlgJNUeyJMQOrFJxvZPltFyoF/tt4wa2zzBJ0TuGbRrPbK21fgXQPWdoy5Boe+I5am/7IAAwGFjQTpciE2Zb5tyOZZQYQdfoDm0lZipDHCia/BMnlLbaF1MDSOB5xszvD/PIKyPxKxVAQdA7TmUz5Je1T97Ib7O+jaz866KnEIdOq8/+IXp0f07zly46miHvQmgzIKIyjA234F1RZxDEiiqf7anHn+UiTmABg6Tdy+82F9g4HSRE8GsReqIhiPwUxBeZEhlnPZzYSLgr468k82RAbXThH4WNzp/q+wkGcQTxVNzuZfjLgBm2KILn5q+voiMtJZF1enRBhAccLDAWHmjbtoWnMWr+5s/rqdUn9synPu27JpPdKsy+9ux5J5CoFUFZHjwvF7JSpcQ0JOBlO+Pqi7wtEJrlgzUFbY4yaCPddQJFcgK/xeTFLRDjVuL98kz6neoTKGuwIdf1SXNmADJpjx+OGsz/o0LJWkn5pl6Lfd3aPgMNuCmub1RFqViEKNXbNR+8z78izC79Vnm2GpmKEogH+h8cTzEK6dUe77sU9Pz/SV7rr4NxWp9JzwIMMHAZpvWgkm7YWZFwM6s63c+Rf/Yn13nZvEr73kG07FiYWRxpwqKppYVgoBzGuGaHMQNBswBzZTCEsLJ339xjatHZ3pytKY9gw2MCkaTdGB4fvk4pJ66xkdXdVzfw+TPl8LzgwhDI8wQjkij2kIMNh8GIZZNqKNDyvpia0mlxmc2sAmab+ySS+o3D/JaAwcgsEHEIjINtj+p+OA+KS4ce9DIXgHNejx8+6okhFkDJwbHOeDbxZak5nQNqTxsLyV4g6C/4ysBdojhjPUECQfO4IYL2p1UvrE2XbPqNx/IFQmnVZHff0=]]></Data>
         <Crypto>
-          <IV><![CDATA[lcN+cItCkftG1TBDwahrEDrH5lASEdJiIG1yeLG9L/4/6Bw2afRxO0oGJlyi+LZKErLc8xXMGhrme9mb8KWad8ICWo6mlg0x8W1fWW/5igFpEuXoX15L91GX2trrdVyt1+LUfRWJoZmbwVkVHNULXpbmgLIfx35Lqf39Ehx1Z/CsK/uR9hfLmMznQoFKoxrFIyGIitz/RLHO8KZoujusdPHMnCXlCzC1xSlT3jCqmpXLPmwfR+dAKMQyNmf72d/SRJHZT0+EvsVI5qYyvcOGbAMseOdMjIMmo1uAjEKaTapJRkm2dzPo1DQf9orDu4KlF1RvnP/i4t1CJ82W92r5zQ==]]></IV>
-          <Key><![CDATA[IsxnwMMaqzBLToF9jZrTnTjybvIGgG/5kN6XcGM+9SiR6lDe1MuJtMFm49Oqn5rlB50GzCBW42ZB+gSRxUDCssdiSXd+GLJ4jeLBtEwZWHxmU2vtB8f85h14UOjls4R9sqBAI5COygWJ4VCAdYs12wI8egC2O3F6cMt2XYpAG6TXa59yrQd7azPANpBsVq56zUdtw9hIM5NTqNI+fhIU8eJxdRyeN5VavxuWKfJCcPa3l+SLjQCeb0+LZrVBBKyV0sAfYeMHiqyecP1qCW8yZqhDu4uMCcOifOthwbGHL9RIyjOpvnSboEFMADLgv3OqNiDWJk3dSOhVr45+0eiBPQ==]]></Key>
+          <IV><![CDATA[IA2O5gJ4srNc/jXAUm58RwfJZM3pUsO+fDNi47qUZeK7qr1X9I7KXoYkrTuvTTOs4qN6+18HT3zGU4+Y6/YVt1go/lqqnAdyCBPIAEalAEqT+tVbJ/CXsiRphMQXsAGwSCTHNjJKS5h0qHPf9v87zMCo/MyuMK3rNvRQWZmp3uoUH3GrgrAHKmaO6Zo2qgLxwqmlH71qF/V9Gzdao+TRn4FDM4/bYDSxIaT0ns0YNhTjdGYvz9crfERlP0ioTsjzIziDkWh9EYWEUQxi2MyCbFfE9QfY56vYciTfVJo0faS0rRc4Ve/yJh99tXnmTnwPLqXxZGhFbVsbxIwxKOSeGg==]]></IV>
+          <Key><![CDATA[ME8r4u9tHpBz2UIU5OAERsEw43oqQZtpCfakLtw0MkrAQ62jOsmumMDFv3gGJl8NmZ6wKcBSEe2PQyCqsf7Z7cUY+mMHRwcVGgWV6lbscEAbfpjfkl+6d5VXUblMFHvmFt7aOEudSks9wa6qBQu16QKWBS9Aw4vxyjP3R3h+4h9gj7TyRduwozJuqsKShdUB9b15s88P/andTrfyGE1rFJSGKcu3zaRkFiClb4s7Q58aVt3kcXKL1dCzZBlIxCPVi9wDkHTOYcRWrbOZkKa9k9ka0IfUrNjfhu514h/o3PFZ0ZwczzVBhk2ESM7sHy1tB8on59CUsMb+F18PcfOVhw==]]></Key>
         </Crypto>
       </SignatureData>
     </Object>

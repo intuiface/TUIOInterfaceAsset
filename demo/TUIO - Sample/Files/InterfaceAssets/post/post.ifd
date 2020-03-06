@@ -1,0 +1,273 @@
+{
+  "basePath": "",
+  "baseUrl": "https://httpbin.org",
+  "description": "Interface with REST API https://httpbin.org",
+  "discoveryVersion": "v1",
+  "id": "post",
+  "if.apiexplorerRequestId": "2954",
+  "if.apiexplorerVersion": "1.0.0",
+  "if.category": "httpbin",
+  "kind": "discovery#restDescription",
+  "name": "post",
+  "protocol": "rest",
+  "requestDelay": 250,
+  "resources": {
+    "RestApiResources": {
+      "if.interfaceAsset": true,
+      "methods": {
+        "post": {
+          "description": "Interface with REST API https://httpbin.org",
+          "httpMethod": "POST",
+          "id": "post",
+          "if.interfaceAsset": false,
+          "parameters": {
+            "message": {
+              "default": "hello",
+              "location": "query",
+              "title": "message",
+              "type": "string"
+            },
+            "parameter1": {
+              "default": "p1",
+              "location": "query",
+              "title": "parameter1",
+              "type": "string"
+            },
+            "parameter2": {
+              "default": "p2",
+              "location": "query",
+              "title": "parameter2",
+              "type": "string"
+            }
+          },
+          "path": "post",
+          "request": {
+            "$ref": "request"
+          },
+          "response": {
+            "$ref": "ResponseType",
+            "description": "Response"
+          },
+          "title": "post"
+        }
+      },
+      "title": "post"
+    }
+  },
+  "rootUrl": "https://httpbin.org",
+  "schemas": {
+    "ResponseType": {
+      "id": "ResponseType",
+      "properties": {
+        "args": {
+          "annotations": {
+            "selected": true
+          },
+          "name": "args",
+          "properties": {
+            "message": {
+              "annotations": {
+                "assetSubtype": "Description",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 5,
+                "selected": true
+              },
+              "name": "message",
+              "title": "message",
+              "type": "string"
+            },
+            "parameter1": {
+              "annotations": {
+                "assetSubtype": "Identifier",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 2
+              },
+              "name": "parameter1",
+              "title": "parameter1",
+              "type": "string"
+            },
+            "parameter2": {
+              "annotations": {
+                "assetSubtype": "Identifier",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 2,
+                "subtypeProbability": 94
+              },
+              "name": "parameter2",
+              "title": "parameter2",
+              "type": "string"
+            }
+          },
+          "title": "args",
+          "type": "object"
+        },
+        "data": {
+          "annotations": {
+            "assetSubtype": "Boolean",
+            "assetSubtypeSetter": "MachineLearning",
+            "assetType": "AssetText",
+            "charactersCount": 2
+          },
+          "name": "data",
+          "title": "data",
+          "type": "string"
+        },
+        "files": {
+          "name": "files",
+          "properties": {},
+          "title": "files",
+          "type": "object"
+        },
+        "form": {
+          "name": "form",
+          "properties": {},
+          "title": "form",
+          "type": "object"
+        },
+        "headers": {
+          "annotations": {
+            "selected": true
+          },
+          "name": "headers",
+          "properties": {
+            "Accept": {
+              "annotations": {
+                "assetSubtype": "Boolean",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 3
+              },
+              "name": "Accept",
+              "title": "Accept",
+              "type": "string"
+            },
+            "Content-Length": {
+              "annotations": {
+                "assetSubtype": "Quantity",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 1
+              },
+              "name": "Content-Length",
+              "title": "Content-Length",
+              "type": "string"
+            },
+            "Content-Type": {
+              "annotations": {
+                "assetSubtype": "Description",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 16,
+                "selected": true
+              },
+              "name": "Content-Type",
+              "title": "Content-Type",
+              "type": "string"
+            },
+            "Host": {
+              "annotations": {
+                "assetSubtype": "Description",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 11,
+                "selected": true
+              },
+              "name": "Host",
+              "title": "Host",
+              "type": "string"
+            },
+            "User-Agent": {
+              "annotations": {
+                "assetSubtype": "Description",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 28,
+                "selected": true
+              },
+              "name": "User-Agent",
+              "title": "User-Agent",
+              "type": "string"
+            },
+            "X-Amzn-Trace-Id": {
+              "annotations": {
+                "assetSubtype": "ProperNoun",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 40,
+                "selected": true
+              },
+              "name": "X-Amzn-Trace-Id",
+              "title": "X-Amzn-Trace-Id",
+              "type": "string"
+            },
+            "X-Newrelic-Id": {
+              "annotations": {
+                "assetSubtype": "Identifier",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 24
+              },
+              "name": "X-Newrelic-Id",
+              "title": "X-Newrelic-Id",
+              "type": "string"
+            },
+            "X-Newrelic-Transaction": {
+              "annotations": {
+                "assetSubtype": "Identifier",
+                "assetSubtypeSetter": "MachineLearning",
+                "assetType": "AssetText",
+                "charactersCount": 72
+              },
+              "name": "X-Newrelic-Transaction",
+              "title": "X-Newrelic-Transaction",
+              "type": "string"
+            }
+          },
+          "title": "headers",
+          "type": "object"
+        },
+        "json": {
+          "name": "json",
+          "properties": {},
+          "title": "json",
+          "type": "object"
+        },
+        "origin": {
+          "annotations": {
+            "assetSubtype": "Identifier",
+            "assetSubtypeSetter": "MachineLearning",
+            "assetType": "AssetText",
+            "charactersCount": 12
+          },
+          "name": "origin",
+          "title": "origin",
+          "type": "string"
+        },
+        "url": {
+          "annotations": {
+            "assetSubtype": "Link",
+            "assetSubtypeSetter": "MachineLearning",
+            "assetType": "AssetText",
+            "charactersCount": 66
+          },
+          "format": "uri",
+          "name": "url",
+          "title": "url",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "request": {
+      "id": "request",
+      "properties": {},
+      "type": "object"
+    }
+  },
+  "servicePath": "",
+  "title": "post",
+  "version": "v1.0"
+}
